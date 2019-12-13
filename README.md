@@ -1,3 +1,7 @@
 Tugas Project Mobile
 
-161402043 - 161402100 - 161402106 - 161402130 -161402090
+Pentari Trimita Pakpahan - 161402043 
+Sinta Anjelina - 161402100 
+Emmanuella Anggi - 161402106 
+Yunita S Marito Pane - 161402130 
+Mikael Napitupulu -161402090
