@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "943354810149",
+    "firebase_url": "https://tugas-mobile-ea0db.firebaseio.com",
+    "project_id": "tugas-mobile-ea0db",
+    "storage_bucket": "tugas-mobile-ea0db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943354810149:android:8c06b0a4bdeebc95ae14cc",
+        "android_client_info": {
+          "package_name": "com.example.fira_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943354810149-99eo4tbg725cfdfor9k70tb9v6v6g658.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHqhfqUMqmRtE8g_0SVYGjGvHv5Yoba9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943354810149-99eo4tbg725cfdfor9k70tb9v6v6g658.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
