@@ -1,15 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:fira/_routing/routes.dart';
+import 'package:fira/views/home.dart';
 import 'package:fira/utils/colors.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:flutter/services.dart';
+import 'package:fira/services/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class RegisterPage extends StatefulWidget {
+
+  RegisterPage({this.authHandler, this.loginCallback});
+
+  final Auth authHandler;
+  final VoidCallback loginCallback;
+
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }
 
 class _RegisterPageState extends State<RegisterPage> {
   final _formKey = GlobalKey<FormState>();
+  var authHandler = new Auth();
+
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController passwordController = new TextEditingController();
+
   int _genderRadioBtnVal = -1;
 
   void _handleGenderChange(int value) {
@@ -59,11 +73,11 @@ class _RegisterPageState extends State<RegisterPage> {
           children: <Widget>[
             _buildFormField('Name', LineIcons.user),
             formFieldSpacing,
-            _buildFormField('Email Address', LineIcons.envelope),
+            _buildFormEmail('Email Address', LineIcons.envelope),
             formFieldSpacing,
             _buildFormField('Phone Number', LineIcons.mobile_phone),
             formFieldSpacing,
-            _buildFormField('Password', LineIcons.lock),
+            _buildFormPassword('Password', LineIcons.lock),
             formFieldSpacing,
           ],
         ),
@@ -112,7 +126,12 @@ class _RegisterPageState extends State<RegisterPage> {
           elevation: 10.0,
           shadowColor: Colors.white70,
           child: MaterialButton(
-            onPressed: () => Navigator.of(context).pushNamed(homeViewRoute),
+            onPressed: () {
+              authHandler.handleSignUp(emailController.text, passwordController.text)
+                  .then((FirebaseUser user) {
+                Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
+              }).catchError((e) => print(e));
+            } ,
             child: Text(
               'CREATE ACCOUNT',
               style: TextStyle(
@@ -169,6 +188,53 @@ class _RegisterPageState extends State<RegisterPage> {
         ),
       ),
       keyboardType: TextInputType.text,
+      style: TextStyle(color: Colors.black),
+      cursorColor: Colors.black,
+    );
+  }
+
+  Widget _buildFormEmail(String label, IconData icon) {
+    return TextFormField(
+      controller: emailController,
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: TextStyle(color: Colors.black),
+        prefixIcon: Icon(
+          icon,
+          color: Colors.black38,
+        ),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.black38),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.orange),
+        ),
+      ),
+      keyboardType: TextInputType.emailAddress,
+      style: TextStyle(color: Colors.black),
+      cursorColor: Colors.black,
+    );
+  }
+
+  Widget _buildFormPassword(String label, IconData icon) {
+    return TextFormField(
+      controller: passwordController,
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: TextStyle(color: Colors.black),
+        prefixIcon: Icon(
+          icon,
+          color: Colors.black38,
+        ),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.black38),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.orange),
+        ),
+      ),
+      keyboardType: TextInputType.emailAddress,
+      validator: (value) => value.isEmpty ? 'Email can\'t be empty' : null,
       style: TextStyle(color: Colors.black),
       cursorColor: Colors.black,
     );

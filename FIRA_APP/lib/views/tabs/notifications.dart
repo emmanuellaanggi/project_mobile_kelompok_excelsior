@@ -8,7 +8,7 @@ class NotificationsPage extends StatelessWidget {
     final deviceWidth = MediaQuery.of(context).size.width;
 
     final pageTitle = Padding(
-      padding: EdgeInsets.only(top: 1.0, bottom: 30.0),
+      padding: EdgeInsets.only(top: 1.0, bottom: 20.0),
       child: Text(
         "Notifications",
         style: TextStyle(
@@ -24,7 +24,7 @@ class NotificationsPage extends StatelessWidget {
     );
 
     final notificationHeader = Container(
-      padding: EdgeInsets.only(top: 30.0, bottom: 10.0),
+      padding: EdgeInsets.only(top: 20.0, bottom: 10.0),
       child: Text(
         "No New Notification",
         style: TextStyle(fontWeight: FontWeight.w700, fontSize: 24.0),
@@ -43,7 +43,7 @@ class NotificationsPage extends StatelessWidget {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.only(
-          top: 70.0,
+          top: 40.0,
           left: 30.0,
           right: 30.0,
           bottom: 30.0,

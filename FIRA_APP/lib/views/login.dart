@@ -1,16 +1,30 @@
+import 'package:fira/views/home.dart';
 import 'package:flutter/material.dart';
 import 'package:fira/_routing/routes.dart';
 import 'package:fira/utils/colors.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:flutter/services.dart';
+import 'package:fira/services/auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginPage extends StatefulWidget {
+
+  LoginPage({this.authHandler, this.loginCallback});
+
+  final Auth authHandler;
+  final VoidCallback loginCallback;
+
   @override
-  _LoginPageState createState() => _LoginPageState();
+  State<StatefulWidget> createState() => new _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
+
+  var authHandler = new Auth();
+
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController passwordController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +54,9 @@ class _LoginPageState extends State<LoginPage> {
       ],
     );
 
+
     final emailField = TextFormField(
+      controller: emailController,
       decoration: InputDecoration(
         labelText: 'Email Address',
         labelStyle: TextStyle(color: Colors.white),
@@ -57,10 +73,13 @@ class _LoginPageState extends State<LoginPage> {
       ),
       keyboardType: TextInputType.emailAddress,
       style: TextStyle(color: Colors.white),
+      validator: (value) => value.isEmpty ? 'Email can\'t be empty' : null,
       cursorColor: Colors.white,
     );
 
+
     final passwordField = TextFormField(
+      controller: passwordController,
       decoration: InputDecoration(
         labelText: 'Password',
         labelStyle: TextStyle(color: Colors.white),
@@ -76,6 +95,7 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
       keyboardType: TextInputType.text,
+      validator: (value) => value.isEmpty ? 'Password can\'t be empty' : null,
       style: TextStyle(color: Colors.white),
       cursorColor: Colors.white,
       obscureText: true,
@@ -102,11 +122,16 @@ class _LoginPageState extends State<LoginPage> {
       ),
       child: RaisedButton(
         elevation: 5.0,
-        onPressed: () => Navigator.pushNamed(context, homeViewRoute),
         color: Colors.white,
         shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(7.0),
         ),
+        onPressed: () {
+          authHandler.handleSignInEmail(emailController.text, passwordController.text)
+              .then((FirebaseUser user) {
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
+          }).catchError((e) => throw e);
+        } ,
         child: Text(
           'SIGN IN',
           style: TextStyle(
@@ -184,4 +209,6 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
+
+
 }
