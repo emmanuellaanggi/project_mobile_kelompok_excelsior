@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:fira/views/home.dart';
 import 'package:fira/utils/colors.dart';
@@ -5,6 +7,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:flutter/services.dart';
 import 'package:fira/services/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RegisterPage extends StatefulWidget {
 
@@ -13,6 +16,7 @@ class RegisterPage extends StatefulWidget {
   final Auth authHandler;
   final VoidCallback loginCallback;
 
+
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }
@@ -20,9 +24,12 @@ class RegisterPage extends StatefulWidget {
 class _RegisterPageState extends State<RegisterPage> {
   final _formKey = GlobalKey<FormState>();
   var authHandler = new Auth();
+  final databaseReference = Firestore.instance;
 
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
+  TextEditingController nameController = new TextEditingController();
+  TextEditingController phoneController = new TextEditingController();
 
   int _genderRadioBtnVal = -1;
 
@@ -71,11 +78,11 @@ class _RegisterPageState extends State<RegisterPage> {
         key: _formKey,
         child: Column(
           children: <Widget>[
-            _buildFormField('Name', LineIcons.user),
+            _buildFormName('Name', LineIcons.user),
             formFieldSpacing,
             _buildFormEmail('Email Address', LineIcons.envelope),
             formFieldSpacing,
-            _buildFormField('Phone Number', LineIcons.mobile_phone),
+            _buildFormPhone('Phone Number', LineIcons.mobile_phone),
             formFieldSpacing,
             _buildFormPassword('Password', LineIcons.lock),
             formFieldSpacing,
@@ -93,19 +100,19 @@ class _RegisterPageState extends State<RegisterPage> {
             groupValue: _genderRadioBtnVal,
             onChanged: _handleGenderChange,
           ),
-          Text("Male"),
+          Text("Pria"),
           Radio(
             value: 1,
             groupValue: _genderRadioBtnVal,
             onChanged: _handleGenderChange,
           ),
-          Text("Female"),
+          Text("Wanita"),
           Radio(
             value: 2,
             groupValue: _genderRadioBtnVal,
             onChanged: _handleGenderChange,
           ),
-          Text("Other"),
+          Text("Lainnya"),
         ],
       ),
     );
@@ -126,12 +133,11 @@ class _RegisterPageState extends State<RegisterPage> {
           elevation: 10.0,
           shadowColor: Colors.white70,
           child: MaterialButton(
-            onPressed: () {
-              authHandler.handleSignUp(emailController.text, passwordController.text)
-                  .then((FirebaseUser user) {
-                Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
-              }).catchError((e) => print(e));
-            } ,
+            onPressed:() { authHandler.handleSignUp(emailController.text, passwordController.text)
+                .then((FirebaseUser user) {
+              createRecord();
+              _showDialog();
+            }).catchError((e) => print(e)); },
             child: Text(
               'CREATE ACCOUNT',
               style: TextStyle(
@@ -171,8 +177,9 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
-  Widget _buildFormField(String label, IconData icon) {
+  Widget _buildFormName(String label, IconData icon) {
     return TextFormField(
+      controller: nameController,
       decoration: InputDecoration(
         labelText: label,
         labelStyle: TextStyle(color: Colors.black),
@@ -193,9 +200,9 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
-  Widget _buildFormEmail(String label, IconData icon) {
+  Widget _buildFormPhone(String label, IconData icon) {
     return TextFormField(
-      controller: emailController,
+      controller: phoneController,
       decoration: InputDecoration(
         labelText: label,
         labelStyle: TextStyle(color: Colors.black),
@@ -210,8 +217,32 @@ class _RegisterPageState extends State<RegisterPage> {
           borderSide: BorderSide(color: Colors.orange),
         ),
       ),
+      keyboardType: TextInputType.phone,
+      style: TextStyle(color: Colors.black),
+      cursorColor: Colors.black,
+    );
+  }
+
+  Widget _buildFormEmail(String label, IconData icon) {
+    return TextFormField(
+      controller: emailController,
+      decoration: InputDecoration(
+        labelText: 'Email Adress',
+        labelStyle: TextStyle(color: Colors.black),
+        prefixIcon: Icon(
+          icon,
+          color: Colors.black38,
+        ),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.black38),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.orange),
+        ),
+      ),
       keyboardType: TextInputType.emailAddress,
       style: TextStyle(color: Colors.black),
+      validator: (value) => value.isEmpty ? 'Email can\'t be empty' : null,
       cursorColor: Colors.black,
     );
   }
@@ -233,10 +264,58 @@ class _RegisterPageState extends State<RegisterPage> {
           borderSide: BorderSide(color: Colors.orange),
         ),
       ),
-      keyboardType: TextInputType.emailAddress,
+      keyboardType: TextInputType.text,
       validator: (value) => value.isEmpty ? 'Email can\'t be empty' : null,
       style: TextStyle(color: Colors.black),
       cursorColor: Colors.black,
+      obscureText: true,
+    );
+  }
+
+
+
+  void createRecord() async {
+    String gender;
+
+    switch(_genderRadioBtnVal) {
+      case 0: { gender = "Pria"; }
+      break;
+
+      case 1: { gender = "Wanita"; }
+      break;
+
+      default: { gender = "Lainnya"; }
+      break;
+    }
+    DocumentReference ref = await databaseReference.collection("user")
+        .add({
+      'email': emailController.text,
+      'nama' : nameController.text,
+      'phone' : phoneController.text,
+      'gender' : gender
+    });
+    print(ref.documentID);
+  }
+
+  FutureOr _showDialog() async {
+    return showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Selamat!"),
+          content: new Text("Email dan Password kamu sudah terdaftar"),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Lanjut"),
+              onPressed: () {
+                Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }
