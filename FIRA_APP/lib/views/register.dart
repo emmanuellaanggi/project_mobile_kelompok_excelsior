@@ -117,6 +117,19 @@ class _RegisterPageState extends State<RegisterPage> {
       ),
     );
 
+    String _gender;
+
+    switch(_genderRadioBtnVal) {
+      case 0: { _gender = "Pria"; }
+      break;
+
+      case 1: { _gender = "Wanita"; }
+      break;
+
+      default: { _gender = "Lainnya"; }
+      break;
+    }
+
     final submitBtn = Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: Container(
@@ -134,10 +147,16 @@ class _RegisterPageState extends State<RegisterPage> {
           shadowColor: Colors.white70,
           child: MaterialButton(
             onPressed:() { authHandler.handleSignUp(emailController.text, passwordController.text)
-                .then((FirebaseUser user) {
-              createRecord();
-              _showDialog();
-            }).catchError((e) => print(e)); },
+                .then((currentUser) => Firestore.instance
+                .collection("users")
+                .document(currentUser.uid)
+                .setData({
+              "uid": currentUser.uid,
+              "name": nameController.text,
+              "phone": phoneController.text,
+              "email": emailController.text,
+              "gender" : _gender
+            })).catchError((e) => _showDialogError(e.toString())); _showDialog();},
             child: Text(
               'CREATE ACCOUNT',
               style: TextStyle(
@@ -272,8 +291,6 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
-
-
   void createRecord() async {
     String gender;
 
@@ -311,6 +328,28 @@ class _RegisterPageState extends State<RegisterPage> {
               child: new Text("Lanjut"),
               onPressed: () {
                 Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  FutureOr _showDialogError(String e) async {
+    return showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: new Text("Oops!"),
+          content: new Text(e),
+          actions: <Widget>[
+            // usually buttons at the bottom of the dialog
+            new FlatButton(
+              child: new Text("Ulangi"),
+              onPressed: () {
+                Navigator.of(context).pop();
               },
             ),
           ],

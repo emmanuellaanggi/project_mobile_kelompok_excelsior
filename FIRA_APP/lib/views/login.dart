@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
           authHandler.handleSignInEmail(emailController.text, passwordController.text)
               .then((FirebaseUser user) {
             Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
-          }).catchError((e) => _showDialog());
+          }).catchError((e) => _showDialog(e.toString()));
         } ,
         child: Text(
           'SIGN IN',
@@ -211,14 +211,14 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-  FutureOr _showDialog() async {
+  FutureOr _showDialog(String e) async {
     return showDialog(
       context: context,
       builder: (BuildContext context) {
         // return object of type Dialog
         return AlertDialog(
           title: new Text("Oops!"),
-          content: new Text("Email dan Password kamu tidak tepat"),
+          content: new Text(e),
           actions: <Widget>[
             // usually buttons at the bottom of the dialog
             new FlatButton(

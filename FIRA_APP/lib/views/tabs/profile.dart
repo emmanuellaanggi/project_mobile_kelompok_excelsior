@@ -3,12 +3,41 @@ import 'package:flutter/material.dart';
 import 'package:fira/models/user.dart';
 import 'package:fira/utils/colors.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'dart:async';
 
 class ProfilePage extends StatelessWidget {
+  final databaseReference = Firestore.instance;
   final User user = users[0];
 
-  @override
-  Widget build(BuildContext context) {
+  Widget _buildList(BuildContext context, DocumentSnapshot document) {
+    return Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(
+            document['name'],
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+          Text(
+            document['phone'],
+            style: TextStyle(
+              color: Colors.grey.withOpacity(0.6),
+              fontSize: 20.0,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildUserInfo(BuildContext context) {
     final hr = Divider();
     final userStats = Positioned(
       bottom: 10.0,
@@ -25,8 +54,8 @@ class ProfilePage extends StatelessWidget {
     );
 
     final userImage = Container(
-      height: 100.0,
-      width: 100.0,
+      height: 70.0,
+      width: 70.0,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(user.photo),
@@ -36,15 +65,61 @@ class ProfilePage extends StatelessWidget {
       ),
     );
 
+    return new StreamBuilder(
+        stream: Firestore.instance.collection('users').snapshots(),
+        //print an integer every 2secs, 10 times
+        builder: (context, snapshot) {
+          if (!snapshot.hasData) {
+            return Text("Loading..");
+          }
+          return Padding(
+              padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+              child: Material(
+                  elevation: 5.0,
+                  borderRadius: BorderRadius.circular(8.0),
+                  shadowColor: Colors.white,
+                  child: Container(
+                      height: 200.0,
+                      width: MediaQuery
+                          .of(context)
+                          .size
+                          .width,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(
+                          color: Colors.grey.withOpacity(0.2),
+                        ),
+                        color: Colors.white,
+                      ),
+                      child: Padding(
+                          padding: const EdgeInsets.only(
+                              left: 20.0, bottom: 20.0),
+                          child: Row(
+                              children: <Widget>[
+                                userImage,
+                                SizedBox(width: 10.0),
+                                _buildList(context, snapshot.data.documents[0])
+                              ]
+                          )
+                      )
+                  )
+              )
+          );
+        });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final hr = Divider();
     final userNameLocation = Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            user.name,
+            'Test',
             style: TextStyle(
-              fontSize: 24.0,
+              fontSize: 10.0,
               fontWeight: FontWeight.w900,
             ),
           ),
@@ -60,40 +135,6 @@ class ProfilePage extends StatelessWidget {
       ),
     );
 
-    final userInfo = Stack(
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-          child: Material(
-            elevation: 5.0,
-            borderRadius: BorderRadius.circular(8.0),
-            shadowColor: Colors.white,
-            child: Container(
-              height: 220.0,
-              width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8.0),
-                border: Border.all(
-                  color: Colors.grey.withOpacity(0.2),
-                ),
-                color: Colors.white,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20.0, bottom: 20.0),
-                child: Row(
-                  children: <Widget>[
-                    userImage,
-                    SizedBox(width: 10.0),
-                    userNameLocation
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-
-      ],
-    );
 
     final secondCard = Padding(
       padding: EdgeInsets.only(right: 20.0, left: 20.0, bottom: 30.0),
@@ -138,23 +179,27 @@ class ProfilePage extends StatelessWidget {
               hr,
               _buildIconTile(LineIcons.diamond, Colors.blue, 'VIP Center'),
               hr,
-              _buildIconTile(LineIcons.user_plus, Colors.orangeAccent, 'Find Friends'),
+              _buildIconTile(
+                  LineIcons.user_plus, Colors.orangeAccent, 'Find Friends'),
               hr,
               _buildIconTile(LineIcons.user_times, Colors.black, 'Blacklist'),
               hr,
-              _buildIconTile(LineIcons.cogs, Colors.grey.withOpacity(0.6), 'Settings'),
+              _buildIconTile(
+                  LineIcons.cogs, Colors.grey.withOpacity(0.6), 'Settings'),
             ],
           ),
         ),
       ),
     );
-
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
-              width: MediaQuery.of(context).size.width,
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
               child: Column(
                 children: <Widget>[
                   Stack(
@@ -166,7 +211,7 @@ class ProfilePage extends StatelessWidget {
                         height: 250.0,
                         decoration: BoxDecoration(gradient: primaryGradient),
                       ),
-                      Positioned(top: 100, right: 0, left: 0, child: userInfo)
+                      Positioned(top: 100, right: 0, left: 0, child: _buildUserInfo(context))
                     ],
                   ),
                   secondCard, thirdCard
