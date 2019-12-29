@@ -1,3 +1,5 @@
+import 'package:fira/views/home.dart';
+import 'package:fira/views/tabs/emergency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fira/_routing/routes.dart';
@@ -27,7 +29,7 @@ class ChatsPage extends StatelessWidget {
       height: 50.0,
       width: deviceWidth,
       decoration: BoxDecoration(
-        color: Colors.grey.withOpacity(0.3),
+        color: Colors.grey.withOpacity(0.5),
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: TextField(
@@ -40,7 +42,7 @@ class ChatsPage extends StatelessWidget {
           contentPadding: EdgeInsets.only(top: 15.0),
           hintText: 'Cari Laporan...',
           hintStyle: TextStyle(
-            color: Colors.grey.withOpacity(0.6),
+            color: Colors.black.withOpacity(0.6),
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -48,9 +50,9 @@ class ChatsPage extends StatelessWidget {
     );
 
     final onlineUsersHeading = Text(
-      "Our Volunteer",
+      "Relawan",
       style: TextStyle(
-        color: Colors.grey.withOpacity(0.6),
+        color: Colors.black.withOpacity(0.6),
         fontWeight: FontWeight.w600,
         fontSize: 20.0,
       ),
@@ -86,6 +88,7 @@ class ChatsPage extends StatelessWidget {
     );
 
     return Scaffold(
+      backgroundColor: Color(0xFFfbab66) ,
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.only(top: 40.0),
@@ -101,7 +104,14 @@ class ChatsPage extends StatelessWidget {
                     pageTitle,
                     searchBar,
                     onlineUsers,
-                    chatList
+                    new RaisedButton(
+                        onPressed: () => Navigator.pushNamed(context, reportViewRoute),
+                        child: new Text("Klik Untuk Melaporkan \n Dugaan Kebakaran",
+                          style: TextStyle(
+                            fontSize: 15
+                          ),
+                        )
+                    )
                   ],
                 ),
               )
@@ -167,7 +177,7 @@ class ChatsPage extends StatelessWidget {
         width: 25.0,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          border: Border.all(color: Colors.white, width: 2.0),
+          border: Border.all(color: Colors.white, width: 10.0),
           gradient: primaryGradient,
         ),
         child: Center(
@@ -234,15 +244,6 @@ class ChatsPage extends StatelessWidget {
                     fontSize: 20.0,
                   ),
                 ),
-              ),
-              Text(
-                chat.message,
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 18.0,
-                  color: Colors.grey.withOpacity(0.6),
-                ),
-                overflow: TextOverflow.ellipsis,
               ),
             ],
           ),

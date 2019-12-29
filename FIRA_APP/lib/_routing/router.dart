@@ -7,6 +7,7 @@ import 'package:fira/views/login.dart';
 import 'package:fira/views/register.dart';
 import 'package:fira/views/reset_password.dart';
 import 'package:fira/views/user_details.dart';
+import 'package:fira/views/report.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -24,6 +25,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => ChatDetailsPage(userId: settings.arguments));
     case userDetailsViewRoute:
       return MaterialPageRoute(builder: (context) => UserDetailsPage(userId: settings.arguments));
+    case reportViewRoute:
+      return MaterialPageRoute(builder: (context) => ReportPage());
       break;
     default:
       return MaterialPageRoute(builder: (context) => LandingPage());

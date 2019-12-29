@@ -6,14 +6,20 @@ INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/m
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/main/AndroidManifest.xml:1:1-30:12
 MERGED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/main/AndroidManifest.xml:1:1-30:12
 MERGED from [:firebase_auth] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_database] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core_web] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:url_launcher_macos] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher_macos/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_web] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/c7d953acc55dc4b3e953472bb182ad56/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/5f1a4d05e41b53cd30ebbbc5e4bf2693/firebase-analytics-17.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/ae246fa97e6f21e313d0978d1db4d7b0/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:15:1-36:12
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/b1770d4de053aa40106e6de3f66900d8/play-services-measurement-impl-17.2.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/e0a2da7227b1e1849157d05334326a1c/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:17:1-27:12
@@ -52,7 +58,9 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/emmanuella/.grad
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/c0bcbfb021564b3b41a4611a164498f0/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/3c765db1ed5a358b855c88f3ebc4e5cb/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/234d8388d3548014233e9d14d722b8ec/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/aa3a1b5f06405e7e2b829f2ee543c504/grpc-android-1.16.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/bcd05e8a0b9be604c7499f9806769fde/firebase-database-collection-16.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/05a0cd4852f69a321bf42fd3f593af63/protolite-well-known-types-16.0.1/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -78,6 +86,8 @@ MERGED from [:firebase_database] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fir
 MERGED from [:firebase_database] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/5f1a4d05e41b53cd30ebbbc5e4bf2693/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/5f1a4d05e41b53cd30ebbbc5e4bf2693/firebase-analytics-17.2.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:28:5-53:19
@@ -88,6 +98,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/ae246fa97e6f21e313d0978d1db4d7b0/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:16:5-22:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:16:5-22:19
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:28:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/b1770d4de053aa40106e6de3f66900d8/play-services-measurement-impl-17.2.0/AndroidManifest.xml:28:5-38:19
@@ -162,12 +174,22 @@ INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/m
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/main/AndroidManifest.xml
 MERGED from [:firebase_auth] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_database] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_database] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core_web] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core_web] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_macos] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher_macos/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_macos] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher_macos/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_web] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/c7d953acc55dc4b3e953472bb182ad56/multidex-2.0.0/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/c7d953acc55dc4b3e953472bb182ad56/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/5f1a4d05e41b53cd30ebbbc5e4bf2693/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/5f1a4d05e41b53cd30ebbbc5e4bf2693/firebase-analytics-17.2.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:20:5-44
@@ -178,6 +200,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/ae246fa97e6f21e313d0978d1db4d7b0/play-services-measurement-sdk-17.2.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/b1770d4de053aa40106e6de3f66900d8/play-services-measurement-impl-17.2.0/AndroidManifest.xml:20:5-44
@@ -254,8 +278,12 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/3c765db1ed5a358b855c88f3ebc4e5cb/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/234d8388d3548014233e9d14d722b8ec/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/234d8388d3548014233e9d14d722b8ec/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/aa3a1b5f06405e7e2b829f2ee543c504/grpc-android-1.16.1/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/aa3a1b5f06405e7e2b829f2ee543c504/grpc-android-1.16.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/bcd05e8a0b9be604c7499f9806769fde/firebase-database-collection-16.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/bcd05e8a0b9be604c7499f9806769fde/firebase-database-collection-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/05a0cd4852f69a321bf42fd3f593af63/protolite-well-known-types-16.0.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/05a0cd4852f69a321bf42fd3f593af63/protolite-well-known-types-16.0.1/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -270,6 +298,8 @@ MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emm
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/b1770d4de053aa40106e6de3f66900d8/play-services-measurement-impl-17.2.0/AndroidManifest.xml:23:5-67
@@ -290,6 +320,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:17:9-21:19
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:17:9-21:19
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:29:9-33:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:29:9-35:19
@@ -316,10 +348,20 @@ ADDED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/bui
 		ADDED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_core] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/b1770d4de053aa40106e6de3f66900d8/play-services-measurement-impl-17.2.0/AndroidManifest.xml:24:5-79
@@ -328,6 +370,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /U
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/e0a2da7227b1e1849157d05334326a1c/play-services-measurement-sdk-api-17.2.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:22:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/aa3a1b5f06405e7e2b829f2ee543c504/grpc-android-1.16.1/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/aa3a1b5f06405e7e2b829f2ee543c504/grpc-android-1.16.1/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:24:22-76
 uses-permission#android.permission.WAKE_LOCK
@@ -420,6 +464,12 @@ ADDED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:38:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:37:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:19:17-111
 meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
 ADDED from [com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
 	android:value

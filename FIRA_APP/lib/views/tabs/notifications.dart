@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fira/utils/utils.dart';
+import 'package:fira/utils/colors.dart';
 
 class NotificationsPage extends StatelessWidget {
   @override
@@ -8,13 +9,13 @@ class NotificationsPage extends StatelessWidget {
     final deviceWidth = MediaQuery.of(context).size.width;
 
     final pageTitle = Padding(
-      padding: EdgeInsets.only(top: 1.0, bottom: 20.0),
+      padding: EdgeInsets.only(top: 5.0, bottom: 10.0),
       child: Text(
         "Notifications",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.black,
-          fontSize: 40.0,
+          fontSize: 20.0,
         ),
       ),
     );
@@ -35,21 +36,21 @@ class NotificationsPage extends StatelessWidget {
       style: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 18.0,
-        color: Colors.grey.withOpacity(0.6),
+        color: Colors.black.withOpacity(0.6),
       ),
       textAlign: TextAlign.center,
     );
 
     return Scaffold(
-      body: Container(
+      body: SingleChildScrollView(
+        child: new Container(
+          decoration: BoxDecoration(gradient: primaryGradient),
         padding: EdgeInsets.only(
           top: 40.0,
           left: 30.0,
           right: 30.0,
-          bottom: 30.0,
+          bottom: 50.0,
         ),
-        height: deviceHeight,
-        width: deviceWidth,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -63,7 +64,7 @@ class NotificationsPage extends StatelessWidget {
             ),
           ],
         ),
-      ),
+      ),)
     );
   }
 }

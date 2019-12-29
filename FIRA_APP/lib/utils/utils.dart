@@ -13,53 +13,53 @@ class AvailableImages {
 
   static const man1 = {
     'assetImage' : AssetImage('assets/images/man1.jpg'),
-    'assetPath' : 'assets/images/man1.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const man2 = {
     'assetImage' : AssetImage('assets/images/man2.jpg'),
-    'assetPath' : 'assets/images/man2.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const man3 = {
     'assetImage' : AssetImage('assets/images/man3.jpg'),
-    'assetPath' : 'assets/images/man3.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const man4 = {
     'assetImage' : AssetImage('assets/images/man4.jpg'),
-    'assetPath' : 'assets/images/man4.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const man5 = {
     'assetImage' : AssetImage('assets/images/man5.jpg'),
-    'assetPath' : 'assets/images/man5.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
 
   static const woman1 = {
     'assetImage' : AssetImage('assets/images/woman1.jpg'),
-    'assetPath' : 'assets/images/woman1.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const woman2 = {
     'assetImage' : AssetImage('assets/images/woman2.jpg'),
-    'assetPath' : 'assets/images/woman2.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const woman3 = {
     'assetImage' : AssetImage('assets/images/woman3.jpg'),
-    'assetPath' : 'assets/images/woman3.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const woman4 = {
     'assetImage' : AssetImage('assets/images/woman4.jpg'),
-    'assetPath' : 'assets/images/woman4.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const woman5 = {
     'assetImage' : AssetImage('assets/images/woman5.jpg'),
-    'assetPath' : 'assets/images/woman5.jpg',
+    'assetPath' : 'assets/images/logo.png',
   };
 
   static const postBanner = {
