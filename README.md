@@ -33,7 +33,11 @@ Task : -
 
 Excelsior Team:
 Pentari Trimita Pakpahan - 161402043
+
 Mikael Napitupulu - 161402090
+
 Sinta Anjelina - 161402100 
+
 Emmanuella Anggi Siallagan - 161402106 
+
 Yunita S Marito Pane - 161402130 
