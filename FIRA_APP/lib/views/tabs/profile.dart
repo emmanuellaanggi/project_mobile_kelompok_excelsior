@@ -73,13 +73,13 @@ class ProfilePage extends StatelessWidget {
                   return Text("Loading..");
                 }
                 return Padding(
-                    padding: const EdgeInsets.only(top: 40, left: 20.0, right: 20.0),
+                    padding: const EdgeInsets.only(top: 20, left: 20.0, right: 20.0),
                     child: Material(
                         elevation: 10.0,
                         borderRadius: BorderRadius.circular(8.0),
                         shadowColor: Colors.white,
                         child: Container(
-                            height: 130.0,
+                            height: 90.0,
                             width: MediaQuery
                                 .of(context)
                                 .size
@@ -116,7 +116,7 @@ class ProfilePage extends StatelessWidget {
     final hr = Divider();
 
     final secondCard = Padding(
-      padding: EdgeInsets.only(top:20.0, right: 20.0, left: 20.0, bottom: 30.0),
+      padding: EdgeInsets.only(top:10.0, right: 20.0, left: 20.0),
       child: Material(
         elevation: 5.0,
         borderRadius: BorderRadius.circular(8.0),
@@ -140,73 +140,46 @@ class ProfilePage extends StatelessWidget {
       ),
     );
 
-    final thirdCard = Padding(
-      padding: EdgeInsets.only(right: 20.0, left: 20.0, bottom: 30.0),
-      child: Material(
-        elevation: 5.0,
-        borderRadius: BorderRadius.circular(8.0),
-        shadowColor: Colors.white,
-        child: Container(
-          height: 350.0,
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(8.0),
-          ),
-          child: Column(
-            children: <Widget>[
-              _buildIconTile(context, LineIcons.money, Colors.red, 'My Wallet', landingViewRoute),
-              hr,
-              _buildIconTile(context, LineIcons.diamond, Colors.blue, 'VIP Center', landingViewRoute),
-              hr,
-              _buildIconTile(context,
-                  LineIcons.user_plus, Colors.orangeAccent, 'Find Friends', landingViewRoute),
-              hr,
-              _buildIconTile(context,LineIcons.user_times, Colors.black, 'Blacklist', landingViewRoute),
-              hr,
-              _buildIconTile(context,
-                  LineIcons.cogs, Colors.grey.withOpacity(0.6), 'Settings', landingViewRoute),
-            ],
-          ),
-        ),
-      ),
-    );
-
     final deviceHeight = MediaQuery.of(context).size.height;
     final deviceWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-        body: SingleChildScrollView(
-          child:
-              Container(
-                  child: Column(
-                    children: <Widget>[
-                      Stack(
-                        children: <Widget>[
-                          Container(
-                            decoration: BoxDecoration(color: Color(0xFFfbab66)),
-                            padding: EdgeInsets.only(
-                              left: deviceWidth,
-                              bottom: deviceHeight*1.36,
-                            ),
-                          ),
-                          Container(
-                            decoration: BoxDecoration(gradient: primaryGradient),
-                            padding: EdgeInsets.only(
-                              left: deviceWidth,
-                              bottom: deviceHeight*0.86,
-                            ),
-                          ),
-                          Positioned(top: 30, right: 0, left: 0, child: _buildUserInfo(context)),
-                          Positioned(top: 210, right: 0, left: 0, child: secondCard),
-                          Positioned(top: 440, right: 0, left: 0, child: thirdCard),
-                        ],
-                      ),
-                    ],
-                  )
-              ),
+      backgroundColor: Color(0xFFfbab66) ,
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.only(top: 40.0),
+          width: deviceWidth,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Stack(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(gradient: primaryGradient),
+                    padding: EdgeInsets.only(
+                      left: deviceWidth,
+                      bottom: deviceHeight*0.77,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(top: 20, left: 1, right: 0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
 
+                        _buildUserInfo(context),
+                        secondCard,
+                        secondCard
 
-        )
+                      ],
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
     );
 
   }

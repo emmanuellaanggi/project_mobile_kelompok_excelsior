@@ -87,6 +87,8 @@ class ChatsPage extends StatelessWidget {
       ),
     );
 
+    final deviceHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: Color(0xFFfbab66) ,
       body: SingleChildScrollView(
@@ -95,26 +97,40 @@ class ChatsPage extends StatelessWidget {
           width: deviceWidth,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Stack(
                   children: <Widget>[
-                    pageTitle,
-                    searchBar,
-                    onlineUsers,
-                    new RaisedButton(
-                        onPressed: () => Navigator.pushNamed(context, reportViewRoute),
-                        child: new Text("Klik Untuk Melaporkan \n Dugaan Kebakaran",
-                          style: TextStyle(
-                            fontSize: 15
-                          ),
-                        )
-                    )
+                    Container(
+                      decoration: BoxDecoration(gradient: primaryGradient),
+                      padding: EdgeInsets.only(
+                        left: deviceWidth,
+                        bottom: deviceHeight*0.77,
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          pageTitle,
+                          searchBar,
+                          onlineUsers,
+                          new RaisedButton(
+                              onPressed: () => Navigator.pushNamed(context, reportViewRoute),
+                              child: new Text("Klik Untuk Melaporkan \n Dugaan Kebakaran",
+                                style: TextStyle(
+                                    fontSize: 15),)),
+                          Text(
+                            "Ini nanti tutorial cara ngirimnya",
+                            style: TextStyle(
+                              fontSize: 30
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ],
-                ),
-              )
+                )
             ],
           ),
         ),

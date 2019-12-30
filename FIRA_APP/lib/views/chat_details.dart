@@ -145,9 +145,11 @@ class ChatDetailsPage extends StatelessWidget {
                 Flexible(
                   child: messageList,
                 ),
+
               ],
             ),
           ),
+
           inputBox
         ],
       ),

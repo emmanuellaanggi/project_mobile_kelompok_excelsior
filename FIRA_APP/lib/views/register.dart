@@ -170,30 +170,47 @@ class _RegisterPageState extends State<RegisterPage> {
       ),
     );
 
+    final deviceHeight = MediaQuery.of(context).size.height;
+    final deviceWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(top: 40.0),
-          child: Column(
+          color: Color(0xFFfbab66),
+          padding: EdgeInsets.only(top: 30.0),
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              appBar,
-              Container(
-                padding: EdgeInsets.only(left: 30.0, right: 30.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+
+              Stack(
                   children: <Widget>[
-                    pageTitle,
-                    registerForm,
-                    gender,
-                    submitBtn
-                  ],
-                ),
-              )
+                    Container(
+                        decoration: BoxDecoration(gradient: primaryGradient),
+                        padding: EdgeInsets.only(
+                          left: deviceWidth,
+                          bottom: deviceHeight,
+                        )),
+                    Positioned(top:15.0, child: appBar,),
+                    Container(
+                      padding: EdgeInsets.only(top: 60.0, left: 40.0, right: 30.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          pageTitle,
+                          registerForm,
+                          gender,
+                          submitBtn
+                        ],
+                      ),
+                    )
+
+                  ])
             ],
           ),
         ),
       ),
     );
+
+
   }
 
   Widget _buildFormName(String label, IconData icon) {

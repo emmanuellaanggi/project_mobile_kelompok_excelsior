@@ -1,6 +1,6 @@
 import 'dart:async';
+import 'dart:io';
 
-import 'package:fira/views/reset_password.dart';
 import 'package:flutter/material.dart';
 import 'package:fira/views/home.dart';
 import 'package:fira/utils/colors.dart';
@@ -9,6 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:fira/services/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:image_picker/image_picker.dart';
 
 
 class ReportPage extends StatefulWidget {
@@ -31,16 +32,43 @@ class _ReportPageState extends State<ReportPage> {
 
   TextEditingController phoneController = new TextEditingController();
 
-  int _genderRadioBtnVal = -1;
+  File galleryFile;
+  File cameraFile;
 
-  void _handleGenderChange(int value) {
-    setState(() {
-      _genderRadioBtnVal = value;
-    });
+  Widget displaySelectedFile(File file) {
+    return new SizedBox(
+      height: 100,
+      width: 100,
+      child: file == null
+          ? new Text('Sorry nothing selected!!')
+          : new Image.file(file),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+
+    imageSelectorGallery() async {
+      galleryFile = await ImagePicker.pickImage(
+        source: ImageSource.gallery,
+        // maxHeight: 50.0,
+        // maxWidth: 50.0,
+      );
+      print("You selected gallery image : " + galleryFile.path);
+      setState(() {});
+    }
+
+    //display image selected from camera
+    imageSelectorCamera() async {
+      cameraFile = await ImagePicker.pickImage(
+        source: ImageSource.camera,
+        //maxHeight: 50.0,
+        //maxWidth: 50.0,
+      );
+      print("You selected camera image : " + cameraFile.path);
+      setState(() {});
+    }
+
     final appBar = Padding(
       padding: EdgeInsets.only(bottom: 20.0),
       child: Row(
@@ -105,7 +133,6 @@ class _ReportPageState extends State<ReportPage> {
                 snapshots(),
                 builder: (context, snapshot) {
                   DocumentSnapshot document = snapshot.data.documents[0];
-                  print(document['uid']);
                   if (!snapshot.hasData) {
                     return Text("Loading..");
                   }
@@ -174,25 +201,50 @@ class _ReportPageState extends State<ReportPage> {
           });
     }
 
+    final deviceHeight = MediaQuery.of(context).size.height;
+    final deviceWidth = MediaQuery.of(context).size.width;
+
       return Scaffold(
         body: SingleChildScrollView(
           child: Container(
             color: Color(0xFFfbab66),
             padding: EdgeInsets.only(top: 30.0),
-            child: Column(
-              children: <Widget>[
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                Stack(
+                children: <Widget>[
+                Container(
+                decoration: BoxDecoration(gradient: primaryGradient),
+              padding: EdgeInsets.only(
+                left: deviceWidth,
+                bottom: deviceHeight,
+              )),
                 appBar,
                 Container(
-                  padding: EdgeInsets.only(left: 20.0, right: 30.0),
+                  padding: EdgeInsets.only(top: 50.0, left: 20.0, right: 20.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       pageTitle,
                       registerForm,
-                      insertdata(context)
+                      new FloatingActionButton(
+                        backgroundColor: Colors.red,
+                        child: new Icon(LineIcons.camera),
+                        onPressed: imageSelectorCamera,
+                      ),
+                      new Container(
+                          child: Column(
+                            children: <Widget>[
+                              displaySelectedFile(cameraFile),
+                              insertdata(context)
+                            ],
+                          )
+                      )
                     ],
                   ),
                 )
+
+                ])
               ],
             ),
           ),
@@ -226,7 +278,7 @@ class _ReportPageState extends State<ReportPage> {
 
   Widget _buildFormEmail(String label, IconData icon) {
     return TextFormField(
-      maxLines: 9,
+      maxLines: 4,
       controller: emailController,
       decoration: InputDecoration(
         labelText: 'Deskripsi Laporan',
