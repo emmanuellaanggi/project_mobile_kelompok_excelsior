@@ -25,20 +25,16 @@ class _ReportPageState extends State<ReportPage> {
   final databaseReference = Firestore.instance;
 
   TextEditingController emailController = new TextEditingController();
-
   TextEditingController passwordController = new TextEditingController();
-
   TextEditingController nameController = new TextEditingController();
-
   TextEditingController phoneController = new TextEditingController();
+  TextEditingController locationController = new TextEditingController();
 
   File galleryFile;
   File cameraFile;
 
   Widget displaySelectedFile(File file) {
     return new SizedBox(
-      height: 100,
-      width: 100,
       child: file == null
           ? new Text('Sorry nothing selected!!')
           : new Image.file(file),
@@ -97,7 +93,7 @@ class _ReportPageState extends State<ReportPage> {
     );
 
     final formFieldSpacing = SizedBox(
-      height: 30.0,
+      height: 20.0,
     );
 
     final registerForm = Padding(
@@ -110,6 +106,8 @@ class _ReportPageState extends State<ReportPage> {
             formFieldSpacing,
             _buildFormEmail('Deskripsi Laporan', LineIcons.file_text),
             formFieldSpacing,
+            _buildFormLocation("Lokasi", LineIcons.location_arrow),
+            formFieldSpacing
           ],
         ),
       ),
@@ -179,6 +177,7 @@ class _ReportPageState extends State<ReportPage> {
                                     "Nama Pelapor": document['name'],
                                     "Laporan": nameController.text,
                                     "Deskripsi Laporan": emailController.text,
+                                    "Lokasi" : locationController.text,
                                     "id_laporan": id_laporan,
                                   }).catchError((e) =>
                                       _showDialogError(e.toString()));
@@ -275,10 +274,33 @@ class _ReportPageState extends State<ReportPage> {
     );
   }
 
+  Widget _buildFormLocation(String label, IconData icon) {
+    return TextFormField(
+      controller: locationController,
+      decoration: InputDecoration(
+        labelText: label,
+        labelStyle: TextStyle(color: Colors.black),
+        prefixIcon: Icon(
+          icon,
+          color: Colors.black38,
+        ),
+        enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.black38),
+        ),
+        focusedBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Colors.orange),
+        ),
+      ),
+      keyboardType: TextInputType.text,
+      style: TextStyle(color: Colors.black),
+      cursorColor: Colors.black,
+    );
+  }
+
 
   Widget _buildFormEmail(String label, IconData icon) {
     return TextFormField(
-      maxLines: 4,
+      maxLines: 3,
       controller: emailController,
       decoration: InputDecoration(
         labelText: 'Deskripsi Laporan',

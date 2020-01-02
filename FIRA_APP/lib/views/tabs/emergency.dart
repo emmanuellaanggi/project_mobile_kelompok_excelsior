@@ -36,6 +36,35 @@ class Emergency extends StatelessWidget {
     final deviceHeight = MediaQuery.of(context).size.height;
     final deviceWidth = MediaQuery.of(context).size.width;
 
+    final reportBtn = Padding(
+      padding: EdgeInsets.only(top: .0),
+      child: Container(
+        margin: EdgeInsets.only(top: 10.0, bottom: 20.0),
+        height: 70.0,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(7.0),
+          border: Border.all(color: Colors.white),
+        ),
+        child: Material(
+          borderRadius: BorderRadius.circular(7.0),
+          color: primaryColor,
+          elevation: 10.0,
+          shadowColor: Colors.white70,
+          child: MaterialButton(
+            onPressed: () => _launchCaller(),
+            child: Text(
+              'Lapor Dugaan Kebakaran',
+              style: TextStyle(
+                fontSize: 19.5,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+
     return Scaffold(
       backgroundColor: Color(0xFFfbab66) ,
       body: SingleChildScrollView(
@@ -60,9 +89,7 @@ class Emergency extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Explanation(),
-                        new RaisedButton(
-                            onPressed: () => _launchCaller(),
-                            child: new Text("Klik Untuk Menelpon Unit Darurat")),
+                        reportBtn,
                       ],
                     ),
                   ),

@@ -1,4 +1,5 @@
 import 'package:fira/views/home.dart';
+import 'package:fira/views/report.dart';
 import 'package:fira/views/tabs/emergency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -89,6 +90,61 @@ class ChatsPage extends StatelessWidget {
 
     final deviceHeight = MediaQuery.of(context).size.height;
 
+    _showDialog() {
+      return showDialog(
+        context: context,
+
+        builder: (BuildContext context) {
+
+
+          // return object of type Dialog
+          return AlertDialog(
+            backgroundColor: Color(0xFFfbab66),
+            title: new Text("Ayo laporkan kemungkinan kebakaran!"),
+            content: new Text("Fitur ini ...."),
+            actions: <Widget>[
+              // usually buttons at the bottom of the dialog
+              new FlatButton(
+                child: new Text("Lapor"),
+                onPressed: () {
+                  Navigator.push(context, new MaterialPageRoute(builder: (context) => new ReportPage()));
+                },
+              ),
+            ],
+          );
+        },
+      );
+    }
+
+    final reportBtn = Padding(
+      padding: EdgeInsets.only(top: .0),
+      child: Container(
+        margin: EdgeInsets.only(top: 10.0, bottom: 20.0),
+        height: 38.0,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(7.0),
+          border: Border.all(color: Colors.white),
+        ),
+        child: Material(
+          borderRadius: BorderRadius.circular(7.0),
+          color: primaryColor,
+          elevation: 10.0,
+          shadowColor: Colors.white70,
+          child: MaterialButton(
+            onPressed: () {_showDialog();},
+            child: Text(
+              'Lapor Dugaan Kebakaran',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+
     return Scaffold(
       backgroundColor: Color(0xFFfbab66) ,
       body: SingleChildScrollView(
@@ -115,15 +171,11 @@ class ChatsPage extends StatelessWidget {
                           pageTitle,
                           searchBar,
                           onlineUsers,
-                          new RaisedButton(
-                              onPressed: () => Navigator.pushNamed(context, reportViewRoute),
-                              child: new Text("Klik Untuk Melaporkan \n Dugaan Kebakaran",
-                                style: TextStyle(
-                                    fontSize: 15),)),
+                          reportBtn,
                           Text(
-                            "Ini nanti tutorial cara ngirimnya",
+                            " Daftar Laporan",
                             style: TextStyle(
-                              fontSize: 30
+                              fontSize: 20
                             ),
                           )
                         ],
@@ -137,6 +189,9 @@ class ChatsPage extends StatelessWidget {
       ),
     );
   }
+
+
+
 
   Widget _buildUserCard(User user, BuildContext context) {
     final firstName = user.name.split(" ")[0];

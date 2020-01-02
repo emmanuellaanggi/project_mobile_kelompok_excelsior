@@ -12,7 +12,7 @@ User can upload suspicious acts regarded to fire safety like waste burning, fore
 For a very emergency situation regarding the fire, FIRA connected the application to emergency unit that immediately act towards the emergency situation.
 FIRA also provided articles about fire prevention, fire acts, fire safety, and some things connected to fire awareness.
 
-This Application used Flutter, configured in only android for the firebase and the data all stored to Firebase's Firestore and managed with localhost website, some function imported from Firebase.
+This Application used Flutter, configured in only android for the firebase and the data all stored to Firebase's Firestore, managed with localhost website, some function imported from Firebase.
 
 Documentation is provided (once it's finished)
 
