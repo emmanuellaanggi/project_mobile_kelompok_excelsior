@@ -14,7 +14,7 @@ FIRA also provided articles about fire prevention, fire acts, fire safety, and s
 
 This Application used Flutter, configured in only android for the firebase and the data all stored to Firebase's Firestore, managed with localhost website, some function imported from Firebase.
 
-Documentation is provided (once it's finished)
+Documentation included wireframes from low and high fidelity, screenshots, function documentation, and task division are provided (once it's finished)
 
 Thank You!
 
