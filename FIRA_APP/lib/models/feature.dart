@@ -17,4 +17,5 @@ final List<Feature> features = [
   Feature(1, 'Lapor', AvailableImages.man1['assetPath'], 'M', 27),
   Feature(2, 'Pemadam', AvailableImages.woman1['assetPath'], 'F', 24),
   Feature(3, 'Artikel', AvailableImages.man2['assetPath'], 'M', 28),
+  Feature(3, 'Pantau', AvailableImages.man1['assetPath'], 'M', 28),
 ];

@@ -19,10 +19,15 @@ class ChatsPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
+            "Laporan " + document['id_laporan'],
+            style: TextStyle(
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+          Text(
             document['Laporan'],
             style: TextStyle(
                 fontWeight: FontWeight.w200,
-                fontSize: 17.0
             ),
           ),
           Text(
@@ -30,7 +35,7 @@ class ChatsPage extends StatelessWidget {
             style: TextStyle(
                 color: Colors.grey.withOpacity(0.6),
                 fontWeight: FontWeight.w600,
-                fontSize: 14.0
+
             ),
           ),
         ],
@@ -129,7 +134,7 @@ class ChatsPage extends StatelessWidget {
       height: 500.0,
       child: ListView.builder(
         itemExtent: 100.0,
-        itemCount: 4,
+        itemCount: 2,
         itemBuilder: (context, index) {
           return _buildUserInfo(context, index);
         },

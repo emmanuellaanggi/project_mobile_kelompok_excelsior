@@ -33,11 +33,12 @@ class LandingPage extends StatelessWidget {
             fontSize: 30.0,
           ),
         ),
+
         Text(
           AppConfig.appTagline,
           style: TextStyle(
             color: Colors.white,
-            fontSize: 18.0,
+            fontSize: 25.0,
             fontWeight: FontWeight.w500
           ),
         )
@@ -110,7 +111,7 @@ class LandingPage extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(top: 30.0),
+              padding: EdgeInsets.only(top: 40.0, left: 0),
               decoration: BoxDecoration(gradient: primaryGradient),
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
@@ -119,11 +120,11 @@ class LandingPage extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 0,
+              bottom: 3,
               child: Padding(
-                padding: EdgeInsets.only(left: 10.0),
+                padding: EdgeInsets.only(),
                 child: Container(
-                  height: 200.0,
+                  height: 170.0,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     image: DecorationImage(

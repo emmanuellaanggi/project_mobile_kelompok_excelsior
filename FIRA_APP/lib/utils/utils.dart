@@ -13,7 +13,7 @@ class AvailableImages {
 
   static const man1 = {
     'assetImage' : AssetImage('assets/images/man1.jpg'),
-    'assetPath' : 'assets/images/logo.png',
+    'assetPath' : 'assets/images/home_page.png',
   };
 
   static const man2 = {
@@ -23,7 +23,7 @@ class AvailableImages {
 
   static const man3 = {
     'assetImage' : AssetImage('assets/images/man3.jpg'),
-    'assetPath' : 'assets/images/logo.png',
+    'assetPath' : 'assets/images/home_page.png',
   };
 
   static const man4 = {

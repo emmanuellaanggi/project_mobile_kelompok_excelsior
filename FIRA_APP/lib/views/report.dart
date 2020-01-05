@@ -32,13 +32,18 @@ class _ReportPageState extends State<ReportPage> {
 
   File galleryFile;
   File cameraFile;
+  final hr = Divider();
 
   Widget displaySelectedFile(File file) {
-    return new SizedBox(
-      child: file == null
-          ? new Text('Sorry nothing selected!!')
-          : new Image.file(file),
-    );
+    return new Column(children: <Widget>[
+      hr,
+      SizedBox(
+        child: file == null
+            ? new Text('Sorry nothing selected!!')
+            : new Image.file(file),
+    )
+    ]);
+
   }
 
   @override

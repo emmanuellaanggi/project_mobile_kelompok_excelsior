@@ -8,6 +8,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:flutter/services.dart';
 import 'package:fira/services/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fira/utils/utils.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -27,6 +28,18 @@ class _LoginPageState extends State<LoginPage> {
 
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
+
+  final logo = Container(
+    margin: EdgeInsets.only(top: 30.0, left: 100.0),
+    height: 100.0,
+    width: 100.0,
+    decoration: BoxDecoration(
+      image: DecorationImage(
+        image: AvailableImages.appLogo,
+        fit: BoxFit.cover,
+      ),
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -193,13 +206,14 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.only(top: 150.0, left: 30.0, right: 30.0),
+          padding: EdgeInsets.only(top: 30.0, left: 30.0, right: 30.0),
           decoration: BoxDecoration(gradient: primaryGradient),
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              logo,
               pageTitle,
               loginForm,
               loginBtn,

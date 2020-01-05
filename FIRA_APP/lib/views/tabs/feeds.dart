@@ -1,14 +1,8 @@
 import 'package:fira/models/feature.dart';
 import 'package:flutter/material.dart';
-import 'package:fira/models/feed.dart';
-import 'package:fira/widgets/feed_card1.dart';
-import 'package:fira/widgets/feed_card2.dart';
-import 'package:fira/widgets/feed_card3.dart';
-import 'package:fira/services/auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fira/_routing/routes.dart';
+import 'package:line_icons/line_icons.dart';
 import 'package:fira/utils/colors.dart';
-import 'package:url_launcher/url_launcher.dart' as urlLauncher;
 import 'package:fira/utils/utils.dart';
 
 class FeedsPage extends StatelessWidget {
@@ -37,7 +31,7 @@ class FeedsPage extends StatelessWidget {
     );
 
     final onlineFeature = Container(
-      margin: EdgeInsets.only(top: 20.0),
+      margin: EdgeInsets.only(top: 20.0, left: 15),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -47,6 +41,52 @@ class FeedsPage extends StatelessWidget {
           ),
           listOfFeature
         ],
+      ),
+    );
+
+    final hr = Divider();
+
+    final secondCard = Padding(
+      padding: EdgeInsets.only(top:10.0, right: 20.0, left: 20.0),
+      child: Material(
+        elevation: 5.0,
+        borderRadius: BorderRadius.circular(8.0),
+        shadowColor: Colors.white,
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+          child: Column(
+            children: <Widget>[
+              hr,
+              _buildIconTile(context, AvailableImages.appLogo, Colors.green, 'Pertolongan Pertama Pada Api', homeViewRoute),
+              hr
+            ],
+          ),
+        ),
+      ),
+    );
+
+    final thirdCard = Padding(
+      padding: EdgeInsets.only(top:10.0, right: 20.0, left: 20.0),
+      child: Material(
+        elevation: 5.0,
+        borderRadius: BorderRadius.circular(8.0),
+        shadowColor: Colors.white,
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+          child: Column(
+            children: <Widget>[
+              hr,
+              _buildIconTile(context, AvailableImages.appLogo, Colors.pink, 'Apa yang harus dilakukan ketika melihat kebakaran hutan?', homeViewRoute),
+              hr
+            ],
+          ),
+        ),
       ),
     );
 
@@ -70,29 +110,31 @@ class FeedsPage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.only(top: 120.0, left: 30.0, right: 30.0),
+                    padding: EdgeInsets.only(top: 120.0, left: 15.0, right: 10.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         onlineFeature,
+                        secondCard,
+                        thirdCard,
+                        secondCard
                       ],
                     ),
                   ),
                   Positioned( top: 30, child: Padding(
                     padding: EdgeInsets.only(left: 10.0),
                     child: Container(
-                      height: 100.0,
+                      height: 150.0,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AvailableImages.homePage,
+                          image: AvailableImages.appLogo,
                           fit: BoxFit.contain,
                         ),
                       ),
                     ),
                   ),
                   ),
-
                 ]),
             ],
           ),
@@ -101,6 +143,23 @@ class FeedsPage extends StatelessWidget {
     );
 
   }
+}
+
+Widget _buildIconTile(BuildContext context, AssetImage image, Color color, String title, String route) {
+  return ListTile(
+    title: Text(title, style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),),
+    leading: Container(
+      height: 40.0,
+      width: 70.0,
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      child: Center(child: Image(image: image,)),
+    ),
+    trailing: Icon(LineIcons.chevron_circle_right),
+    onTap: () => Navigator.pushNamed(context, route),
+  );
 }
 
 Widget _buildUserCard(Feature feature, BuildContext context) {
@@ -133,4 +192,5 @@ Widget _buildUserCard(Feature feature, BuildContext context) {
       )
     ],
   );
+
 }

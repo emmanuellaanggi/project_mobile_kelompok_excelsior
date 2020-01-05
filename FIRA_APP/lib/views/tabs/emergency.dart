@@ -66,7 +66,7 @@ class Emergency extends StatelessWidget {
           child: MaterialButton(
             onPressed: () => _launchCaller(),
             child: Text(
-              'Lapor Dugaan Kebakaran',
+              'Lapor Kebakaran',
               style: TextStyle(
                 fontSize: 19.5,
                 color: Colors.white,
