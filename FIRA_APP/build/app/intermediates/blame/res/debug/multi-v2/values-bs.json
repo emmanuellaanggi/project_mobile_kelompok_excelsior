@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
+            "outputFile": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
             "map": [
                 {
                     "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9a6a440fae8500321f7e065f9575f81d/play-services-base-17.0.0/res/values-bs/values.xml",

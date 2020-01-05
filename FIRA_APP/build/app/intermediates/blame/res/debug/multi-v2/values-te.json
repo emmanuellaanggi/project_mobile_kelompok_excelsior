@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
+            "outputFile": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml",
             "map": [
                 {
                     "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/f88aa5f8f2c375cd87c7092eb7d6c8a4/core-1.0.2/res/values-te/values-te.xml",

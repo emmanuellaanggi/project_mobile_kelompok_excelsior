@@ -155,7 +155,7 @@ class _RegisterPageState extends State<RegisterPage> {
               "name": nameController.text,
               "phone": phoneController.text,
               "email": emailController.text,
-              "gender" : _gender
+              "gender" : _gender,
             })).catchError((e) => _showDialogError(e.toString())); _showDialog();},
             child: Text(
               'CREATE ACCOUNT',
@@ -344,7 +344,16 @@ class _RegisterPageState extends State<RegisterPage> {
             new FlatButton(
               child: new Text("Lanjut"),
               onPressed: () {
-                Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
+                authHandler.getUser()
+                  .then((currentUser) => Firestore.instance
+                  .collection("users")
+                  .document(currentUser.uid)
+                  .collection("laporan")
+                  .document("0")
+                  .setData({
+                  "id_laporan" : "0"
+                }));
+              Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
               },
             ),
           ],

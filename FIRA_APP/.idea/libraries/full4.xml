@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="full4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/firebase_database/intermediates/full_jar/debug/createFullJarDebug/full.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

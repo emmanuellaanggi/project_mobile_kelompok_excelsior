@@ -23,7 +23,7 @@ class Emergency extends StatelessWidget {
 
   Widget Explanation() {
     return Text(
-        "Untuk keadaan darurat yang \n berpotensi kebakaran besar",
+        "\n   Untuk keadaan darurat \n   dengan potensi kebakaran \n   besar dan cepat",
         style: TextStyle(
           fontSize: 20.0,
           color: Colors.white,
@@ -36,10 +36,22 @@ class Emergency extends StatelessWidget {
     final deviceHeight = MediaQuery.of(context).size.height;
     final deviceWidth = MediaQuery.of(context).size.width;
 
+    final pageTitle = Padding(
+      padding: EdgeInsets.only(top: 1.0, bottom: 20.0),
+      child: Text(
+        "\n\n Laporkan Kebakaran",
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+          color: Colors.black,
+          fontSize: 25.0,
+        ),
+      ),
+    );
+
     final reportBtn = Padding(
       padding: EdgeInsets.only(top: .0),
       child: Container(
-        margin: EdgeInsets.only(top: 10.0, bottom: 20.0),
+        margin: EdgeInsets.only(top: 30.0, bottom: 20.0),
         height: 70.0,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
@@ -84,10 +96,11 @@ class Emergency extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.only(top: 170.0, left: 50.0, right: 35.0),
+                    padding: EdgeInsets.only(top: 30.0, left: 40.0, right: 30.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+                        pageTitle,
                         Explanation(),
                         reportBtn,
                       ],

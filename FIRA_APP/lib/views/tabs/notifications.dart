@@ -42,6 +42,7 @@ class NotificationsPage extends StatelessWidget {
     );
 
     return Scaffold(
+        backgroundColor: Color(0xFFfbab66),
       body: SingleChildScrollView(
         child: new Container(
           decoration: BoxDecoration(gradient: primaryGradient),

@@ -21,7 +21,7 @@ class ProfilePage extends StatelessWidget {
           Text(
             document['name'],
             style: TextStyle(
-              fontWeight: FontWeight.w900,
+              fontWeight: FontWeight.w700,
               fontSize: 20.0
             ),
           ),
@@ -122,7 +122,7 @@ class ProfilePage extends StatelessWidget {
         borderRadius: BorderRadius.circular(8.0),
         shadowColor: Colors.white,
         child: Container(
-          height: 200.0,
+          height: 350.0,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(8.0),
@@ -131,7 +131,11 @@ class ProfilePage extends StatelessWidget {
             children: <Widget>[
               _buildIconTile(context, Icons.settings, Colors.red, 'Pengaturan', homeViewRoute),
               hr,
-              _buildIconTile(context, LineIcons.users, Colors.green, 'Grup', homeViewRoute),
+              _buildIconTile(context, Icons.warning, Colors.red, 'Laporan', reportViewRoute),
+              hr,
+              _buildIconTile(context, LineIcons.users, Colors.green, 'Komunitas', homeViewRoute),
+              hr,
+              _buildIconTile(context, Icons.info, Colors.red, 'Tentang Kami', homeViewRoute),
               hr,
               _buildIconTile(context, LineIcons.sign_out, Colors.purpleAccent, 'Keluar', landingViewRoute),
             ],
@@ -168,7 +172,6 @@ class ProfilePage extends StatelessWidget {
                       children: <Widget>[
 
                         _buildUserInfo(context),
-                        secondCard,
                         secondCard
 
                       ],

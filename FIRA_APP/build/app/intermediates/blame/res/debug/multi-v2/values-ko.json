@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/emmanuella/Desktop/TUGAS_MOBILE/FIRA/fira/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/e20d060c47342e1feab29fde7ae48e70/jetified-play-services-basement-17.0.0/res/values-ko/values.xml",
