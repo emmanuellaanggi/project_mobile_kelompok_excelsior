@@ -46,6 +46,28 @@ class FeedsPage extends StatelessWidget {
 
     final hr = Divider();
 
+    final firstCard = Padding(
+      padding: EdgeInsets.only(top:10.0, right: 20.0, left: 20.0),
+      child: Material(
+        elevation: 5.0,
+        borderRadius: BorderRadius.circular(8.0),
+        shadowColor: Colors.white,
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+          child: Column(
+            children: <Widget>[
+              hr,
+              _buildIconTile(context, AvailableImages.appLogo, Colors.purple, 'Mengenal Pemadam Kebakaran', readArticle),
+              hr
+            ],
+          ),
+        ),
+      ),
+    );
+
     final secondCard = Padding(
       padding: EdgeInsets.only(top:10.0, right: 20.0, left: 20.0),
       child: Material(
@@ -115,9 +137,9 @@ class FeedsPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         onlineFeature,
+                        firstCard,
                         secondCard,
-                        thirdCard,
-                        secondCard
+                        thirdCard
                       ],
                     ),
                   ),

@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_media_cancel_action.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_media.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_lines_media.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_big_media_custom.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_big_media.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_media_custom.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_media_action.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/a7be4d7d2504030d847ae40e39c468ce/media-1.0.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/layout/notification_template_icon_group.xml"
+    }
+]

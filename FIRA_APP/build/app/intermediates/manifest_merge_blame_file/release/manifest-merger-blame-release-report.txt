@@ -1,0 +1,275 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="fira.fira"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
+11-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Required permission for App measurement to run. -->
+12-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:5-81
+12-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:23:5-67
+13-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:23:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:24:5-79
+14-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:24:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:25:5-68
+15-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:25:22-65
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:26:22-107
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:26:5-82
+17-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:26:22-79
+18    <!--
+19 io.flutter.app.FlutterApplication is an android.app.Application that
+20         calls FlutterMain.startInitialization(this); in its onCreate method.
+21         In most cases you can leave this as-is, but you if you want to provide
+22         additional functionality it is fine to subclass or reimplement
+23         FlutterApplication and put your custom class here.
+24    -->
+25    <application
+25-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:8:5-29:19
+26        android:name="io.flutter.app.FlutterApplication"
+26-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:9:9-57
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.2] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/f88aa5f8f2c375cd87c7092eb7d6c8a4/core-1.0.2/AndroidManifest.xml:22:18-86
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:11:9-43
+29        android:label="fira" >
+29-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:10:9-29
+30        <activity
+30-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:12:9-23:20
+31            android:name="fira.fira.MainActivity"
+31-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:13:13-41
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:16:13-163
+33            android:hardwareAccelerated="true"
+33-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:17:13-47
+34            android:launchMode="singleTop"
+34-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:14:13-43
+35            android:theme="@style/LaunchTheme"
+35-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:15:13-47
+36            android:windowSoftInputMode="adjustResize" >
+36-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:18:13-55
+37            <intent-filter>
+37-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:19:13-22:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:20:17-68
+38-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:20:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:21:17-76
+40-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:21:27-74
+41            </intent-filter>
+42        </activity>
+43        <!--
+44             Don't delete the meta-data below.
+45             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+46        -->
+47        <meta-data
+47-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:26:9-28:33
+48            android:name="flutterEmbedding"
+48-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:27:13-44
+49            android:value="2" />
+49-->/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/android/app/src/main/AndroidManifest.xml:28:13-30
+50
+51        <service
+51-->[:firebase_database] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:9-12:19
+52            android:name="com.google.firebase.components.ComponentDiscoveryService"
+52-->[:firebase_database] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:8:18-89
+53            android:exported="false" >
+53-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:29:13-37
+54            <meta-data
+54-->[:firebase_database] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+55                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+55-->[:firebase_database] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:10:17-127
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[:firebase_database] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_database/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+57            <meta-data
+57-->[:firebase_auth] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+58                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+58-->[:firebase_auth] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:10:17-122
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[:firebase_auth] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_auth/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+60            <meta-data
+60-->[:firebase_core] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+61                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+61-->[:firebase_core] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-123
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[:firebase_core] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+63            <meta-data
+63-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
+64                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+64-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/192166dd83cbbfd73ea18c910cc55de2/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:18:13-20:85
+67                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+67-->[com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:19:17-111
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-firestore:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/177bec91b20a1cd31e0a954f9de9673a/jetified-firebase-firestore-19.0.0/AndroidManifest.xml:20:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
+70                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+70-->[com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-database:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/869d06db4ebf8a09ef38b1f639a42c89/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:36:13-38:85
+73                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+73-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:37:17-109
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:38:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+76                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+76-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+78        </service>
+79
+80        <activity
+80-->[:url_launcher] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:8:9-11:74
+81            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+81-->[:url_launcher] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:9:13-74
+82            android:exported="false"
+82-->[:url_launcher] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:10:13-37
+83            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+83-->[:url_launcher] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/library_manifest/release/AndroidManifest.xml:11:13-71
+84
+85        <provider
+85-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:9-19:20
+86            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+86-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:12:13-82
+87            android:authorities="fira.fira.flutter.image_provider"
+87-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-74
+88            android:exported="false"
+88-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
+89            android:grantUriPermissions="true" >
+89-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:13-47
+90            <meta-data
+90-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:16:13-18:75
+91                android:name="android.support.FILE_PROVIDER_PATHS"
+91-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:17:17-67
+92                android:resource="@xml/flutter_image_picker_file_paths" />
+92-->[:image_picker] /Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:18:17-72
+93        </provider>
+94
+95        <receiver
+95-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:29:9-33:20
+96            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+96-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:30:13-85
+97            android:enabled="true"
+97-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:31:13-35
+98            android:exported="false" >
+98-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:32:13-37
+99        </receiver>
+100        <receiver
+100-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:34:9-42:20
+101            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+101-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:35:13-100
+102            android:enabled="true"
+102-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:36:13-35
+103            android:exported="true"
+103-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:37:13-36
+104            android:permission="android.permission.INSTALL_PACKAGES" >
+104-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:38:13-69
+105            <intent-filter>
+105-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:39:13-41:29
+106                <action android:name="com.android.vending.INSTALL_REFERRER" />
+106-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:40:17-79
+106-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:40:25-76
+107            </intent-filter>
+108        </receiver>
+109
+110        <service
+110-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:44:9-47:40
+111            android:name="com.google.android.gms.measurement.AppMeasurementService"
+111-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:45:13-84
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:46:13-35
+113            android:exported="false" />
+113-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:47:13-37
+114        <service
+114-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:48:9-52:72
+115            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+115-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
+116            android:enabled="true"
+116-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:50:13-35
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:51:13-37
+118            android:permission="android.permission.BIND_JOB_SERVICE" />
+118-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/6570256977e83c7cf37235ba156a235b/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
+119
+120        <activity
+120-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:24:9-31:50
+121            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+121-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:25:13-85
+122            android:excludeFromRecents="true"
+122-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:26:13-46
+123            android:exported="true"
+123-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:27:13-36
+124            android:launchMode="singleTask"
+124-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:28:13-44
+125            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+125-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:29:13-102
+126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+126-->[com.google.firebase:firebase-auth:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9fa81d0b5b2cae004ee8af9e62d217fe/jetified-firebase-auth-17.0.0/AndroidManifest.xml:30:13-72
+127
+128        <receiver
+128-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+129            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+129-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+130            android:exported="true"
+130-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+131            android:permission="com.google.android.c2dm.permission.SEND" >
+131-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+132            <intent-filter>
+132-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+133                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+133-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+133-->[com.google.firebase:firebase-iid:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/d2db7998fe11f0473870f9ce401558c5/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+134            </intent-filter>
+135        </receiver>
+136
+137        <provider
+137-->[com.google.firebase:firebase-common:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/4923b1553298f222c443d752ca4288b9/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
+138            android:name="com.google.firebase.provider.FirebaseInitProvider"
+138-->[com.google.firebase:firebase-common:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/4923b1553298f222c443d752ca4288b9/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
+139            android:authorities="fira.fira.firebaseinitprovider"
+139-->[com.google.firebase:firebase-common:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/4923b1553298f222c443d752ca4288b9/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
+140            android:exported="false"
+140-->[com.google.firebase:firebase-common:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/4923b1553298f222c443d752ca4288b9/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
+141            android:initOrder="100" />
+141-->[com.google.firebase:firebase-common:19.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/4923b1553298f222c443d752ca4288b9/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
+142
+143        <activity
+143-->[com.google.android.gms:play-services-base:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9a6a440fae8500321f7e065f9575f81d/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+144            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+144-->[com.google.android.gms:play-services-base:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9a6a440fae8500321f7e065f9575f81d/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+145            android:exported="false"
+145-->[com.google.android.gms:play-services-base:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9a6a440fae8500321f7e065f9575f81d/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+146-->[com.google.android.gms:play-services-base:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/9a6a440fae8500321f7e065f9575f81d/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+147
+148        <meta-data
+148-->[com.google.android.gms:play-services-basement:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/e20d060c47342e1feab29fde7ae48e70/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+149            android:name="com.google.android.gms.version"
+149-->[com.google.android.gms:play-services-basement:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/e20d060c47342e1feab29fde7ae48e70/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+150            android:value="@integer/google_play_services_version" />
+150-->[com.google.android.gms:play-services-basement:17.0.0] /Users/emmanuella/.gradle/caches/transforms-2/files-2.1/e20d060c47342e1feab29fde7ae48e70/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+151    </application>
+152
+153</manifest>

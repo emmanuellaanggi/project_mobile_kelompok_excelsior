@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/cloud_firestore/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/10c9c9478eaba881a4eaaac1c45fa3ad/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    }
+]

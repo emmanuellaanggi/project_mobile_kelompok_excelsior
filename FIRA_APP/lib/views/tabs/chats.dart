@@ -13,6 +13,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class ChatsPage extends StatelessWidget {
 
   Widget _buildList(BuildContext context, DocumentSnapshot document) {
+    if (document==null) {
+      return Text("Belum ada laporan..");
+    }
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -116,6 +119,48 @@ class ChatsPage extends StatelessWidget {
         });
   }
 
+  Widget _buildUserReport(BuildContext context) {
+    return FutureBuilder<String>(
+        future: getUser(), // a previously-obtained Future<String> or null
+        builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+          if (!snapshot.hasData) {
+            return Text("Belum ada laporan..");
+          }
+          return new StreamBuilder(
+              stream: Firestore.instance.
+              collection('users').
+              where('uid', isEqualTo: '${snapshot.data}').
+              snapshots(),
+              builder: (context, snapshot) {
+                DocumentSnapshot document = snapshot.data.documents[0];
+                if (!snapshot.hasData) {
+                  return Text("Belum ada laporan..");
+                }
+                return new StreamBuilder(
+                    stream: Firestore.instance
+                        .collection("users")
+                        .document(document['uid'])
+                        .collection("laporan")
+                        .orderBy("id_laporan", descending: false).snapshots(),
+                    builder: (context, snapshot2) {
+                      DocumentSnapshot document2 = snapshot2.data.documents[0];
+                      var idx = int.parse(document2["id_laporan"]);
+                      if (!snapshot.hasData) {
+                        return Text("Belum ada laporan..");
+                      }
+                      return  Container(
+                          height: 500.0,
+                          child: ListView.builder(
+                            itemExtent: 100.0,
+                            itemCount: idx,
+                            itemBuilder: (context, index) {
+                              return _buildUserInfo(context, index);
+                            },
+                          ));
+                    });
+              });
+        });
+}
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +181,8 @@ class ChatsPage extends StatelessWidget {
       ),
     );
 
-    final ReportList = Container(
+    final ReportList =
+    Container(
       height: 500.0,
       child: ListView.builder(
         itemExtent: 100.0,
@@ -302,7 +348,7 @@ class ChatsPage extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 20
                           ),
-                        ), ReportList
+                        ), _buildUserReport(context)
                       ],
                     ),
                   ),
