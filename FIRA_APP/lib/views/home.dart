@@ -1,16 +1,10 @@
 import 'package:fira/views/tabs/emergency.dart';
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:fira/utils/colors.dart';
 import 'package:fira/views/tabs/chats.dart';
 import 'package:fira/views/tabs/feeds.dart';
 import 'package:fira/views/tabs/notifications.dart';
 import 'package:fira/views/tabs/profile.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fira/services/auth.dart';
-import 'package:url_launcher/url_launcher.dart' as urlLauncher;
 
 class HomePage extends StatefulWidget {
   @override
