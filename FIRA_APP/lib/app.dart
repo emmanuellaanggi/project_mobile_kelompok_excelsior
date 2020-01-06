@@ -7,7 +7,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Social',
+      title: 'Fire Rescue Application',
       debugShowCheckedModeBanner: false,
       theme: buildThemeData(),
       onGenerateRoute: router.generateRoute,
