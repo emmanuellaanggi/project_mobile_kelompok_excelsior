@@ -1,12 +1,4 @@
-import 'package:fira/models/user.dart';
 import 'package:flutter/material.dart';
-import 'package:fira/models/feed.dart';
-import 'package:fira/widgets/feed_card1.dart';
-import 'package:fira/widgets/feed_card2.dart';
-import 'package:fira/widgets/feed_card3.dart';
-import 'package:fira/services/auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart' as urlLauncher;
 import 'package:fira/utils/colors.dart';
 
