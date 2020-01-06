@@ -6,7 +6,6 @@ import 'package:fira/utils/colors.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:flutter/services.dart';
 import 'package:fira/services/auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RegisterPage extends StatefulWidget {

@@ -9,7 +9,6 @@ class ReadArticle extends StatefulWidget {
 }
 
 class _ReadArticle extends State<ReadArticle> {
-  final _formKey = GlobalKey<FormState>();
 
   final hr = Divider();
 

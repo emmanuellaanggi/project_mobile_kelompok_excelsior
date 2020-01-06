@@ -1,10 +1,7 @@
-import 'package:fira/views/home.dart';
 import 'package:fira/views/report.dart';
-import 'package:fira/views/tabs/emergency.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:fira/_routing/routes.dart';
-import 'package:fira/models/chat.dart';
 import 'package:fira/models/user.dart';
 import 'package:fira/utils/colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';

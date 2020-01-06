@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee25ac1-50fd-4fea-a4cf-9e21c6d088a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/views/read_article.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/read_article.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/views/register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/register.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/report.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/report.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/tabs/chats.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/tabs/chats.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,13 +22,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_27" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/views/tabs/chats.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2115">
-              <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+            <state>
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#1#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +54,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/views/register.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="167" column="14" lean-forward="true" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+            <state relative-caret-position="105">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/views/report.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="31" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -63,13 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/views/report.dart">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/views/read_article.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="141" column="59" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
+            <state relative-caret-position="114">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,18 +137,18 @@
         <option value="$PROJECT_DIR$/lib/models/feature.dart" />
         <option value="$PROJECT_DIR$/lib/_routing/router.dart" />
         <option value="$PROJECT_DIR$/lib/_routing/routes.dart" />
-        <option value="$PROJECT_DIR$/lib/views/read_article.dart" />
         <option value="$PROJECT_DIR$/lib/views/tabs/feeds.dart" />
         <option value="$PROJECT_DIR$/android/key.properties" />
         <option value="$PROJECT_DIR$/key.properties" />
         <option value="$PROJECT_DIR$/android/app/src/debug/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/android/app/build.gradle" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/lib/views/tabs/chats.dart" />
         <option value="$PROJECT_DIR$/lib/app.dart" />
         <option value="$PROJECT_DIR$/lib/views/home.dart" />
-        <option value="$PROJECT_DIR$/lib/views/register.dart" />
         <option value="$PROJECT_DIR$/lib/views/report.dart" />
+        <option value="$PROJECT_DIR$/lib/views/read_article.dart" />
+        <option value="$PROJECT_DIR$/lib/views/register.dart" />
+        <option value="$PROJECT_DIR$/lib/views/tabs/chats.dart" />
       </list>
     </option>
   </component>
@@ -174,19 +183,6 @@
               <item name="FIRA_APP" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="_routing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FIRA_APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FIRA_APP" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FIRA_APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FIRA_APP" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="tabs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,7 +234,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21095571" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21095571" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -246,7 +242,7 @@
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Dart Analysis" order="0" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.32954547" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
@@ -434,26 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/read_article.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/tabs/chats.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/app.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -468,22 +444,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/views/read_article.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/register.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="167" column="14" lean-forward="true" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/views/report.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="141" column="31" selection-start-line="141" selection-start-column="31" selection-end-line="141" selection-end-column="31" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/report.dart">
+    <entry file="file://$PROJECT_DIR$/lib/views/tabs/chats.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="141" column="59" selection-start-line="141" selection-start-column="59" selection-end-line="141" selection-end-column="59" />
+        <state>
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#1#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
