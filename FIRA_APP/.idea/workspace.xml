@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee25ac1-50fd-4fea-a4cf-9e21c6d088a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/views/chat_details.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/home.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/landing.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/login.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/read_article.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/register.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/report.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/reset_password.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/tabs/chats.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/tabs/emergency.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/tabs/feeds.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/tabs/notifications.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/tabs/profile.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/user_details.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/_routing/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_routing/router.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/chat.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/feature.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/feed.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/message.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/todo.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/_routing/router.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="321">
+              <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -463,8 +454,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/_routing/router.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        <state relative-caret-position="321">
+          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
