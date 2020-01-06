@@ -7,6 +7,7 @@ import 'package:fira/utils/colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+/* showing list of report from firebase */
 class ChatsPage extends StatelessWidget {
 
   Widget _buildList(BuildContext context, DocumentSnapshot document) {
