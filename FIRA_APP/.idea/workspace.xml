@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/services/auth.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" selection-end-line="40" selection-end-column="1" />
+            <state relative-caret-position="101">
+              <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -456,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/services/auth.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-end-line="40" selection-end-column="1" />
+        <state relative-caret-position="101">
+          <caret line="8" column="95" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

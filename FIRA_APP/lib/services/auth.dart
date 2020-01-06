@@ -6,7 +6,7 @@ class Auth {
 
   Future<FirebaseUser> getUser() {
     return auth.currentUser();
-  }
+  } /* This is function to get the user, used in every pages that show report or user's profile*/
 
   Future<FirebaseUser> handleSignInEmail(String email, String password) async {
     final FirebaseAuth auth = FirebaseAuth.instance;
@@ -24,7 +24,7 @@ class Auth {
     print('signInEmail succeeded: $user');
 
     return user;
-  }
+  } /* This is to handle the sign in */
 
   Future<FirebaseUser> handleSignUp(email, password) async {
     final FirebaseAuth auth = FirebaseAuth.instance;
@@ -37,5 +37,5 @@ class Auth {
     assert (await user.getIdToken() != null);
 
     return user;
-  }
+  } /* this is to handle the sign up */
 }
