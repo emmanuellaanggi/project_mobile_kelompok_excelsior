@@ -1,4 +1,4 @@
-Tugas Project Mobile (Still on progress)
+Tugas Project Mobile
 
 FIRA - FLUTTER AND FIREBASE BASED APPLICATION
 
