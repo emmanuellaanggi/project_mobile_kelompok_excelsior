@@ -25,7 +25,7 @@ Pengguna dapat mengunggah tindakan mencurigakan yang dianggap sebagai keselamata
 Untuk situasi yang sangat darurat terkait kebakaran, FIRA menghubungkan aplikasi ke unit darurat yang akan segera bertindak terhadap situasi darurat.
 FIRA juga menyediakan artikel tentang pencegahan kebakaran, tindakan kebakaran, keselamatan kebakaran, dan beberapa hal yang berhubungan dengan kebakaran.
 
-Aplikasi ini menggunakan Flutter, yang hanya dikonfigurasikan di android untuk firebase dan semua data disimpan ke Firebase Firestore, dikelola dengan situs web localhost, beberapa fungsi yang diimpor dari Firebase.
+Aplikasi ini menggunakan Flutter, yang hanya dikonfigurasikan di android untuk firebase dan semua data disimpan ke Firebase Firestore, dikelola dengan situs web localhost, dengan beberapa fungsi yang diimpor dari Firebase.
 
 Dokumentasi termasuk gambar rangka dari kesetiaan rendah dan tinggi, tangkapan layar, dokumentasi fungsi, dan pembagian tugas disediakan
 
