@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee25ac1-50fd-4fea-a4cf-9e21c6d088a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/utils/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/colors.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/_routing/router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/_routing/router.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +31,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/utils/colors.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
               <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/_routing/router.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +156,6 @@
         <option value="$PROJECT_DIR$/lib/utils/utils.dart" />
         <option value="$PROJECT_DIR$/lib/views/tabs/emergency.dart" />
         <option value="$PROJECT_DIR$/lib/models/feature.dart" />
-        <option value="$PROJECT_DIR$/lib/_routing/router.dart" />
         <option value="$PROJECT_DIR$/lib/_routing/routes.dart" />
         <option value="$PROJECT_DIR$/lib/views/tabs/feeds.dart" />
         <option value="$PROJECT_DIR$/android/key.properties" />
@@ -159,6 +170,7 @@
         <option value="$PROJECT_DIR$/lib/views/register.dart" />
         <option value="$PROJECT_DIR$/lib/views/tabs/chats.dart" />
         <option value="$PROJECT_DIR$/lib/utils/colors.dart" />
+        <option value="$PROJECT_DIR$/lib/_routing/router.dart" />
       </list>
     </option>
   </component>
@@ -364,16 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/_routing/router.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/key.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -492,6 +494,16 @@
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/_routing/router.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
