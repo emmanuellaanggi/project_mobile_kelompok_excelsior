@@ -49,22 +49,11 @@ class _ReportPageState extends State<ReportPage> {
   @override
   Widget build(BuildContext context) {
 
-    imageSelectorGallery() async {
-      galleryFile = await ImagePicker.pickImage(
-        source: ImageSource.gallery,
-        // maxHeight: 50.0,
-        // maxWidth: 50.0,
-      );
-      print("You selected gallery image : " + galleryFile.path);
-      setState(() {});
-    }
+    //only show camra to restrict the image
 
-    //display image selected from camera
     imageSelectorCamera() async {
       cameraFile = await ImagePicker.pickImage(
         source: ImageSource.camera,
-        //maxHeight: 50.0,
-        //maxWidth: 50.0,
       );
       print("You selected camera image : " + cameraFile.path);
       setState(() {});
@@ -151,7 +140,6 @@ class _ReportPageState extends State<ReportPage> {
                         var one = int.parse(document2["id_laporan"]);
                         var two = one + 1;
                         String id_laporan = two.toString();
-
                         return Padding(
                           padding: EdgeInsets.only(top: 20.0),
                           child: Container(

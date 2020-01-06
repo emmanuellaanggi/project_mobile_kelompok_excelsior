@@ -158,8 +158,7 @@ class _RegisterPageState extends State<RegisterPage> {
               "gender" : _gender,
             })).catchError((e) => _showDialogError(e.toString())); _showDialog();
             authHandler.getUser()
-                .then((currentUser) => Firestore.instance
-                .collection("users")
+                .then((currentUser) => Firestore.instance.collection("users")
                 .document(currentUser.uid)
                 .collection("laporan")
                 .document("0")
