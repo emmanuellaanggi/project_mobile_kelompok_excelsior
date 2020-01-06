@@ -72,7 +72,6 @@ class AvailableImages {
     'assetPath' : 'assets/images/empty.png',
   };
 
-  static const homePage = const AssetImage('assets/images/home_page.png');
-  static const homePage1 = const AssetImage('assets/images/home_page1.png');
+  static const homePage = const AssetImage('assets/images/home_page.png');  
   static const appLogo = const AssetImage('assets/images/logo.png');  
 }

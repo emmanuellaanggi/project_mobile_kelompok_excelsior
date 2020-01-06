@@ -154,8 +154,9 @@ class _RegisterPageState extends State<RegisterPage> {
               "name": nameController.text,
               "phone": phoneController.text,
               "email": emailController.text,
-              "gender" : _gender})).catchError((e) => _showDialogError(e.toString()));
-            _showDialog();
+              "gender" : _gender,
+            })).catchError((e) => _showDialogError(e.toString())); _showDialog();
+        
             },
             child: Text(
               'CREATE ACCOUNT',
