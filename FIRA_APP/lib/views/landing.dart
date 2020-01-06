@@ -41,7 +41,7 @@ class LandingPage extends StatelessWidget {
     final loginBtn = InkWell(
       onTap: () => Navigator.pushNamed(context, loginViewRoute),
       child: Container(
-        height: 60.0,
+        height: 40.0,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(7.0),
@@ -62,7 +62,7 @@ class LandingPage extends StatelessWidget {
     );
 
     final registerBtn = Container(
-      height: 60.0,
+      height: 40.0,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(7.0),
@@ -88,7 +88,7 @@ class LandingPage extends StatelessWidget {
 
     final buttons = Padding(
       padding: EdgeInsets.only(
-        top: 60.0,
+        top: 20.0,
         bottom: 30.0,
         left: 30.0,
         right: 30.0,
@@ -108,7 +108,19 @@ class LandingPage extends StatelessWidget {
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               child: Column(
-                children: <Widget>[logo, appName, buttons],
+                children: <Widget>[logo,
+                  appName,
+                  Center(
+                    child: Text(
+                      "\nEmmanuella Anggi - 161402106\nPentari Trimita Pakpahan - 161402043\nYunita S Marito Pane - 161402130\nMikael Napitupulu - 161402090\nSinta Anjelina - 161402100"
+                    ,style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 10.0,
+                      color: Colors.white
+                    )
+                    )
+                  ),
+                  buttons],
               ),
             ),
             Positioned(
