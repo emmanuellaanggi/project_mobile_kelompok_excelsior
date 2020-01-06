@@ -1,3 +1,4 @@
+import 'package:fira/views/read_article.dart';
 import 'package:flutter/material.dart';
 import 'package:fira/_routing/routes.dart';
 import 'package:fira/views/chat_details.dart';
@@ -27,6 +28,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => UserDetailsPage(userId: settings.arguments));
     case reportViewRoute:
       return MaterialPageRoute(builder: (context) => ReportPage());
+    case readArticle:
+      return MaterialPageRoute(builder: (context) => ReadArticle());
       break;
     default:
       return MaterialPageRoute(builder: (context) => LandingPage());

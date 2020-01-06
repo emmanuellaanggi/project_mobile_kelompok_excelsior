@@ -60,7 +60,7 @@ class FeedsPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               hr,
-              _buildIconTile(context, AvailableImages.appLogo, Colors.green, 'Pertolongan Pertama Pada Api', homeViewRoute),
+              _buildIconTile(context, AvailableImages.appLogo, Colors.green, 'Pertolongan Pertama Pada Korban Api', readArticle),
               hr
             ],
           ),
@@ -82,7 +82,7 @@ class FeedsPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               hr,
-              _buildIconTile(context, AvailableImages.appLogo, Colors.pink, 'Apa yang harus dilakukan ketika melihat kebakaran hutan?', homeViewRoute),
+              _buildIconTile(context, AvailableImages.appLogo, Colors.pink, 'Apa yang harus dilakukan ketika melihat kebakaran hutan?', readArticle),
               hr
             ],
           ),

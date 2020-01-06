@@ -6,5 +6,6 @@ const String resetPasswordViewRoute = 'reset_password';
 
 const String homeViewRoute = 'home';
 const String reportViewRoute = 'report';
+const String readArticle = 'read';
 const String chatDetailsViewRoute = 'chat_details';
 const String userDetailsViewRoute = 'user_details';

@@ -25,14 +25,6 @@ class LandingPage extends StatelessWidget {
 
     final appName = Column(
       children: <Widget>[
-        Text(
-          AppConfig.appName,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-            fontSize: 30.0,
-          ),
-        ),
 
         Text(
           AppConfig.appTagline,

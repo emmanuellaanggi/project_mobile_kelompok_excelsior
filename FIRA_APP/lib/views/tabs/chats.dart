@@ -54,6 +54,9 @@ class ChatsPage extends StatelessWidget {
     return FutureBuilder<String>(
         future: getUser(), // a previously-obtained Future<String> or null
         builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+          if (!snapshot.hasData) {
+            return Text("Belum ada laporan..");
+          }
           return new StreamBuilder(
               stream: Firestore.instance.
               collection('users').
@@ -62,7 +65,7 @@ class ChatsPage extends StatelessWidget {
               builder: (context, snapshot) {
                 DocumentSnapshot document = snapshot.data.documents[0];
                 if (!snapshot.hasData) {
-                  return Text("Belum..");
+                  return Text("Belum ada laporan..");
                 }
                 return new StreamBuilder(
                     stream: Firestore.instance
@@ -72,6 +75,9 @@ class ChatsPage extends StatelessWidget {
                         .orderBy("id_laporan", descending: true).snapshots(),
                     builder: (context, snapshot2) {
                       DocumentSnapshot document2 = snapshot2.data.documents[index];
+                      if (!snapshot.hasData) {
+                        return Text("Belum ada laporan..");
+                      }
                       return Padding(
                           padding: const EdgeInsets.only(
                               top: 10, left: 10.0, right: 10.0),
