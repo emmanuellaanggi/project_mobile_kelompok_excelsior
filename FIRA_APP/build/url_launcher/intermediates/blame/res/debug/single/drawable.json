@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/res/merged/debug/drawable/notification_bg.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/url_launcher/intermediates/res/merged/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/emmanuella/.gradle/caches/transforms-2/files-2.1/df6cf23cc51da578d8b158de17d0c9cb/core-1.0.0/res/drawable/notification_bg_low.xml"
+    }
+]
