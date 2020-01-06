@@ -14,4 +14,4 @@ class App extends StatelessWidget {
       initialRoute: landingViewRoute,
     );
   }
-}
+} /* Information on the app and the first landing page and the route configuration *
