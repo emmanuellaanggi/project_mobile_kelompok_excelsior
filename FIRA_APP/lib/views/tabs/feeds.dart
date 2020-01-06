@@ -22,13 +22,7 @@ class FeedsPage extends StatelessWidget {
       ),
     );
 
-    final listOfFeature = Container(
-      height: 100.0,
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: features.map((feature) => _buildUserCard(feature, context)).toList(),
-      ),
-    );
+    
 
     final onlineFeature = Container(
       margin: EdgeInsets.only(top: 20.0, left: 15),

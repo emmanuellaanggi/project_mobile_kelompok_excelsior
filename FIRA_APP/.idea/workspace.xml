@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ee25ac1-50fd-4fea-a4cf-9e21c6d088a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/views/tabs/emergency.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/tabs/emergency.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/views/tabs/feeds.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/tabs/feeds.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,13 +38,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/views/tabs/emergency.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="109" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/views/tabs/feeds.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +112,6 @@
         <option value="$PROJECT_DIR$/lib/utils/utils.dart" />
         <option value="$PROJECT_DIR$/lib/models/feature.dart" />
         <option value="$PROJECT_DIR$/lib/_routing/routes.dart" />
-        <option value="$PROJECT_DIR$/lib/views/tabs/feeds.dart" />
         <option value="$PROJECT_DIR$/android/key.properties" />
         <option value="$PROJECT_DIR$/key.properties" />
         <option value="$PROJECT_DIR$/android/app/src/debug/AndroidManifest.xml" />
@@ -117,6 +128,7 @@
         <option value="$PROJECT_DIR$/lib/app.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/views/tabs/emergency.dart" />
+        <option value="$PROJECT_DIR$/lib/views/tabs/feeds.dart" />
       </list>
     </option>
   </component>
@@ -311,16 +323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/views/tabs/feeds.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="55" selection-start-line="55" selection-end-line="56" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
@@ -479,10 +481,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/views/tabs/emergency.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="109" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/views/tabs/feeds.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
