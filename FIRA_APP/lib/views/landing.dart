@@ -88,8 +88,7 @@ class LandingPage extends StatelessWidget {
 
     final buttons = Padding(
       padding: EdgeInsets.only(
-        top: 50.0,
-        bottom: 50.0,
+        top: MediaQuery.of(context).size.height*0.02,
         left: 30.0,
         right: 30.0,
       ),
@@ -103,7 +102,7 @@ class LandingPage extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Container(
-              padding: EdgeInsets.only(top: 40.0, left: 0),
+              padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.1, left: 0),
               decoration: BoxDecoration(gradient: primaryGradient),
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
@@ -112,7 +111,7 @@ class LandingPage extends StatelessWidget {
                   appName,
                   Center(
                     child: Text(
-                      "\nEmmanuella Anggi - 161402106\nPentari Trimita Pakpahan - 161402043\nYunita S Marito Pane - 161402130\nMikael Napitupulu - 161402090\nSinta Anjelina - 161402100"
+                      "\nEmmanuella Anggi - 161402106 - Pentari Trimita Pakpahan - 161402043\nYunita S Marito Pane - 161402130 - Mikael Napitupulu - 161402090\nSinta Anjelina - 161402100"
                     ,style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 10.0,
@@ -124,16 +123,16 @@ class LandingPage extends StatelessWidget {
               ),
             ),
             Positioned(
-              bottom: 3,
+              bottom: 0,
               child: Padding(
                 padding: EdgeInsets.only(),
                 child: Container(
-                  height: 170.0,
+                  height: MediaQuery.of(context).size.height*0.25,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: AvailableImages.homePage1,
-                      fit: BoxFit.contain,
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),

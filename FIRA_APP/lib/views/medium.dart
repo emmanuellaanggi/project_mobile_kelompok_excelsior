@@ -44,11 +44,10 @@ class _Medium extends State<Medium> {
 
     final pageTitle = Center(child: Container(
       child: Text(
-        "Selamat Datang!\n Ayo Cegah Api Bersama-sama!",
+        "Selamat Datang! Ayo Cegah Api Bersama!",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           color: Colors.white,
-          fontSize: 25.0,
         ),
       ),
     ));
@@ -119,6 +118,7 @@ class _Medium extends State<Medium> {
                             ),
                           ),
                           Divider(),
+                      pageTitle,
 
                       Padding(
                         padding: EdgeInsets.only(top: 20.0),

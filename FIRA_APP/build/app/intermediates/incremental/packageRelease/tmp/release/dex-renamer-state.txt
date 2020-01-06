@@ -1,4 +1,4 @@
-#Mon Jan 06 22:36:23 WIB 2020
+#Tue Jan 07 00:01:23 WIB 2020
 base.0=/Users/emmanuella/Documents/GitHub/ProjectMobile_Kelompok_Excelsior/FIRA_APP/build/app/intermediates/transforms/r8/release/0/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

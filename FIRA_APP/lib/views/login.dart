@@ -30,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController passwordController = new TextEditingController();
 
   final logo = Container(
-    margin: EdgeInsets.only(top: 30.0, left: 100.0),
+    margin: EdgeInsets.only(top: 30.0),
     height: 100.0,
     width: 100.0,
     decoration: BoxDecoration(
