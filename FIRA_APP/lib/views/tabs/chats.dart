@@ -139,7 +139,7 @@ class ChatsPage extends StatelessWidget {
                         .collection("users")
                         .document(document['uid'])
                         .collection("laporan")
-                        .orderBy("id_laporan", descending: true).snapshots(),
+                        .orderBy("id_laporan", descending: false).snapshots(),
                     builder: (context, snapshot2) {
                       DocumentSnapshot document2 = snapshot2.data.documents[0];
                       var idx = int.parse(document2["id_laporan"]);

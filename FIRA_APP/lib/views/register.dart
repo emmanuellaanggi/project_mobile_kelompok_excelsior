@@ -155,7 +155,7 @@ class _RegisterPageState extends State<RegisterPage> {
               "phone": phoneController.text,
               "email": emailController.text,
               "gender" : _gender,
-            })).catchError((e) => _showDialogError(e.toString()));
+            })).catchError((e) => _showDialogError(e.toString())); _showDialog();
             authHandler.getUser()
                 .then((currentUser) => Firestore.instance.collection("users")
                 .document(currentUser.uid)
@@ -164,7 +164,6 @@ class _RegisterPageState extends State<RegisterPage> {
                 .setData({
               "id_laporan" : "0"
             }));
-            _showDialog();
             },
             child: Text(
               'CREATE ACCOUNT',

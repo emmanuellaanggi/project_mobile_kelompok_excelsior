@@ -41,7 +41,7 @@ class LandingPage extends StatelessWidget {
     final loginBtn = InkWell(
       onTap: () => Navigator.pushNamed(context, loginViewRoute),
       child: Container(
-        height: 60.0,
+        height: 40.0,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(7.0),
@@ -62,7 +62,7 @@ class LandingPage extends StatelessWidget {
     );
 
     final registerBtn = Container(
-      height: 60.0,
+      height: 40.0,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(7.0),
@@ -132,7 +132,7 @@ class LandingPage extends StatelessWidget {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AvailableImages.homePage1,
+                      image: AvailableImages.homePage,
                       fit: BoxFit.contain,
                     ),
                   ),
