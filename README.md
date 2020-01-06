@@ -14,22 +14,23 @@ FIRA also provided articles about fire prevention, fire acts, fire safety, and s
 
 This Application used Flutter, configured in only android for the firebase and the data all stored to Firebase's Firestore, managed with localhost website, some function imported from Firebase.
 
-Documentation included wireframes from low and high fidelity, screenshots, function documentation, and task division are provided (once it's finished)
+Documentation included wireframes from low and high fidelity, screenshots, function documentation, and task division are provided
 
-Thank You!
+Thank you!
 
---
+Indonesia:
+Aplkasi ini dibuat untuk memenuhi tugas akhir pemograman mobile. Aplikasi ini bertujuan untuk meningkatkan kesadaran tentang keselamatan dari kebakaran.
 
-Indonesian :
+Pengguna dapat mengunggah tindakan mencurigakan yang dianggap sebagai keselamatan kebakaran seperti pembakaran limbah, kebakaran hutan, perilaku sembrono dengan api, dan lain-lain. Dengan perincian seperti geolokasi dan gambar.  Relawan akan memeriksa laporan dan memutuskan tindakan mana yang harus dilakukan.
+Untuk situasi yang sangat darurat terkait kebakaran, FIRA menghubungkan aplikasi ke unit darurat yang akan segera bertindak terhadap situasi darurat.
+FIRA juga menyediakan artikel tentang pencegahan kebakaran, tindakan kebakaran, keselamatan kebakaran, dan beberapa hal yang berhubungan dengan kebakaran.
 
-...
+Aplikasi ini menggunakan Flutter, yang hanya dikonfigurasikan di android untuk firebase dan semua data disimpan ke Firebase Firestore, dikelola dengan situs web localhost, beberapa fungsi yang diimpor dari Firebase.
 
-Task Division in building this application :
+Dokumentasi termasuk gambar rangka dari kesetiaan rendah dan tinggi, tangkapan layar, dokumentasi fungsi, dan pembagian tugas disediakan
 
-nama-nim :
-Task : -
-       -
-(Details coming once it's done)
+Terima kasih!
+
 
 
 
