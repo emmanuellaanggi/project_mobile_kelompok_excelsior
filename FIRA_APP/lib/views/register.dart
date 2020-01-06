@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fira/views/medium.dart';
 import 'package:flutter/material.dart';
 import 'package:fira/views/home.dart';
 import 'package:fira/utils/colors.dart';
@@ -146,24 +147,14 @@ class _RegisterPageState extends State<RegisterPage> {
           shadowColor: Colors.white70,
           child: MaterialButton(
             onPressed:() { authHandler.handleSignUp(emailController.text, passwordController.text)
-                .then((currentUser) => Firestore.instance
-                .collection("users")
+                .then((currentUser) => Firestore.instance.collection("users")
                 .document(currentUser.uid)
                 .setData({
               "uid": currentUser.uid,
               "name": nameController.text,
               "phone": phoneController.text,
               "email": emailController.text,
-              "gender" : _gender,
-            })).catchError((e) => _showDialogError(e.toString()));
-            authHandler.getUser()
-                .then((currentUser) => Firestore.instance.collection("users")
-                .document(currentUser.uid)
-                .collection("laporan")
-                .document("0")
-                .setData({
-              "id_laporan" : "0"
-            }));
+              "gender" : _gender})).catchError((e) => _showDialogError(e.toString()));
             _showDialog();
             },
             child: Text(
@@ -352,16 +343,7 @@ class _RegisterPageState extends State<RegisterPage> {
             new FlatButton(
               child: new Text("Lanjut"),
               onPressed: () {
-                authHandler.getUser()
-                  .then((currentUser) => Firestore.instance
-                  .collection("users")
-                  .document(currentUser.uid)
-                  .collection("laporan")
-                  .document("0")
-                  .setData({
-                  "id_laporan" : "0"
-                }));
-              Navigator.push(context, new MaterialPageRoute(builder: (context) => new HomePage()));
+              Navigator.push(context, new MaterialPageRoute(builder: (context) => new Medium()));
               },
             ),
           ],

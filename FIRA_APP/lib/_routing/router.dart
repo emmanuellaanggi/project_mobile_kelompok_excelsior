@@ -8,6 +8,7 @@ import 'package:fira/views/login.dart';
 import 'package:fira/views/register.dart';
 import 'package:fira/views/reset_password.dart';
 import 'package:fira/views/user_details.dart';
+import 'package:fira/views/medium.dart';
 import 'package:fira/views/report.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -30,6 +31,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => ReportPage());
     case readArticle:
       return MaterialPageRoute(builder: (context) => ReadArticle());
+    case MediumRoute:
+      return MaterialPageRoute(builder: (context) => Medium());
       break;
     default:
       return MaterialPageRoute(builder: (context) => LandingPage());
