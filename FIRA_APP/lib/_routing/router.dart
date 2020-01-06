@@ -10,7 +10,6 @@ import 'package:fira/views/reset_password.dart';
 import 'package:fira/views/user_details.dart';
 import 'package:fira/views/report.dart';
 
-
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case landingViewRoute:
