@@ -1,10 +1,10 @@
-Tugas Project Mobile
+## Tugas Project Mobile
 
-FIRA - FLUTTER AND FIREBASE BASED APPLICATION
+### FIRA - FLUTTER AND FIREBASE BASED APPLICATION
 
-Fire Rescue Application (FIRA)
+#### Fire Rescue Application (FIRA)
 
-English:
+##### English:
 
 Is an application that made for final assignment of Mobile Programming. This Application aimed to rise awareness about fire safety. 
 
@@ -18,16 +18,15 @@ Documentation included wireframes from low and high fidelity, screenshots, funct
 
 Thank you!
 
-Indonesia:
+##### Indonesia:
+
 Aplkasi ini dibuat untuk memenuhi tugas akhir pemograman mobile. Aplikasi ini bertujuan untuk meningkatkan kesadaran tentang keselamatan dari kebakaran.
 
-Pengguna dapat mengunggah tindakan mencurigakan yang dianggap sebagai keselamatan kebakaran seperti pembakaran limbah, kebakaran hutan, perilaku sembrono dengan api, dan lain-lain. Dengan perincian seperti geolokasi dan gambar.  Relawan akan memeriksa laporan dan memutuskan tindakan mana yang harus dilakukan.
-Untuk situasi yang sangat darurat terkait kebakaran, FIRA menghubungkan aplikasi ke unit darurat yang akan segera bertindak terhadap situasi darurat.
-FIRA juga menyediakan artikel tentang pencegahan kebakaran, tindakan kebakaran, keselamatan kebakaran, dan beberapa hal yang berhubungan dengan kebakaran.
+Pengguna dapat melaporkan tindakan mencurigakan yang dianggap dapat menyebabkan kebakaran dan mengancam keselamatan seperti pembakaran limbah, kebakaran hutan, perilaku sembrono dengan api, dan lain-lain dengan mengunggah detail keadaan, geolokasi dan gambar keadaan yang terjadi. Selanjutnya, Relawan yang akan memeriksa laporan dan memutuskan tindakan mana yang harus dilakukan. Untuk situasi kebakaran yang sangat darurat, FIRA menghubungkan aplikasi ke unit darurat yang akan segera bertindak terhadap situasi tersebut. FIRA juga menyediakan artikel tentang pencegahan kebakaran, tindakan kebakaran, keselamatan kebakaran, dan beberapa hal yang berhubungan dengan kebakaran.
 
-Aplikasi ini menggunakan Flutter, yang hanya dikonfigurasikan di android untuk firebase dan semua data disimpan ke Firebase Firestore, dikelola dengan situs web localhost, dengan beberapa fungsi yang diimpor dari Firebase.
+Aplikasi ini dibuat dengan Flutter, yang dikonfigurasikan di android untuk firebase dengan penyimpanan data menggunakan Firebase Firestore, yang dikelola dengan situs web localhost, dengan beberapa fungsi yang diimpor dari Firebase.
 
-Dokumentasi termasuk gambar rangka dari kesetiaan rendah dan tinggi, tangkapan layar, dokumentasi fungsi, dan pembagian tugas disediakan
+Dokumentasi termasuk gambar kerangka tampilan (low-fidelity wireframe) beserta desain tampilan (high fidelity prototype),  tangkapan layar, dokumentasi fungsi, dan pembagian tugas disediakan
 
 Terima kasih!
 
