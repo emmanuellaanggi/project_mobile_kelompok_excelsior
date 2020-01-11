@@ -16,6 +16,8 @@ This Application used Flutter, configured in only android for the firebase and t
 
 Documentation included wireframes from low and high fidelity, screenshots, function documentation, and task division are provided
 
+I restored the admin to here https://github.com/emmanuellaanggi/admin_fira
+
 Thank you!
 
 ##### Indonesia:
